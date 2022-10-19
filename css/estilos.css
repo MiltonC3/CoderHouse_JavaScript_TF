@@ -1,0 +1,3484 @@
+.div-loaded {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  z-index: 1;
+  background-color: #000000;
+  transition: 0.5s ease-out;
+  flex-direction: column;
+  display: flex;
+  align-items: center; }
+  .div-loaded .img-width-loading {
+    z-index: 1;
+    position: relative;
+    top: 44vh;
+    width: 17rem;
+    animation-iteration-count: infinite;
+    animation-duration: 1s; }
+  .div-loaded .p-loaded {
+    color: #ffffff;
+    font-family: "Mukta", sans-serif;
+    position: fixed;
+    top: 52vh;
+    font-size: 1.4rem; }
+
+.div-modal-carrito {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #0000004d;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  z-index: 1;
+  height: 100vh;
+  transition: 0.5s all ease-in; }
+  .div-modal-carrito .div-carrito {
+    width: 31rem;
+    height: 38.5rem;
+    background-color: #0a0a0a;
+    font-weight: 200;
+    border-radius: 0.5rem;
+    font-family: "Mukta", sans-serif; }
+    .div-modal-carrito .div-carrito .h4-carrito {
+      text-align: center;
+      margin: 1rem;
+      font-weight: 300;
+      font-size: 2rem;
+      color: #ffffff; }
+    .div-modal-carrito .div-carrito .h6-carrito {
+      text-align: center;
+      font-weight: 300;
+      color: #d8d8d8;
+      font-size: 1.1rem; }
+    .div-modal-carrito .div-carrito .card-carrito {
+      overflow: auto;
+      display: flex;
+      flex-direction: column;
+      height: 60.6%;
+      width: 100%; }
+      .div-modal-carrito .div-carrito .card-carrito .div-card-carrito {
+        display: grid;
+        margin: 0.4rem;
+        position: relative;
+        border-radius: 0.5rem;
+        left: 5%;
+        width: 90%;
+        transition: 1s;
+        height: 7.1rem;
+        grid-template-columns: 32.5% 33.5% 24% 10%;
+        grid-template-rows: 45% 55%;
+        grid-template-areas: "grid-img-carrito grid-nombre-carrito grid-cantidad grid-btn-eliminar" "grid-img-carrito grid-nombre-carrito grid-precio-carrito grid-precio-carrito";
+        /* grid img card */
+        /* grid cantidad card */
+        /* grid remove card */
+        /* grid nombre card */
+        /* grid precio card */ }
+        .div-modal-carrito .div-carrito .card-carrito .div-card-carrito .grid-img-carrito {
+          grid-area: grid-img-carrito; }
+          .div-modal-carrito .div-carrito .card-carrito .div-card-carrito .grid-img-carrito .img-carrito {
+            width: 80%;
+            border-radius: 0.5rem; }
+        .div-modal-carrito .div-carrito .card-carrito .div-card-carrito .grid-cantidad {
+          grid-area: grid-cantidad; }
+          .div-modal-carrito .div-carrito .card-carrito .div-card-carrito .grid-cantidad .div-cantidad {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            left: 1.2rem;
+            width: 100%;
+            height: 80%; }
+            .div-modal-carrito .div-carrito .card-carrito .div-card-carrito .grid-cantidad .div-cantidad .p-cantidad {
+              font-family: 'Mukta', sans-serif;
+              color: #ffffff;
+              position: relative;
+              top: 0.45rem;
+              text-align: center;
+              font-weight: 200;
+              font-size: 0.9rem;
+              margin-top: 0.4rem; }
+            .div-modal-carrito .div-carrito .card-carrito .div-card-carrito .grid-cantidad .div-cantidad .div-btn-a-d {
+              position: relative;
+              left: 0.2rem; }
+              .div-modal-carrito .div-carrito .card-carrito .div-card-carrito .grid-cantidad .div-cantidad .div-btn-a-d .btn-aumentar {
+                width: 1.5rem;
+                height: 1.5rem;
+                border: none;
+                background-color: #0a0a0a; }
+                .div-modal-carrito .div-carrito .card-carrito .div-card-carrito .grid-cantidad .div-cantidad .div-btn-a-d .btn-aumentar .span-icon-aumentar {
+                  width: 1.5rem;
+                  height: 1.5rem;
+                  font-size: 20px;
+                  color: #acacac; }
+                  .div-modal-carrito .div-carrito .card-carrito .div-card-carrito .grid-cantidad .div-cantidad .div-btn-a-d .btn-aumentar .span-icon-aumentar:hover {
+                    font-size: 20px;
+                    color: #60d6b3; }
+              .div-modal-carrito .div-carrito .card-carrito .div-card-carrito .grid-cantidad .div-cantidad .div-btn-a-d .btn-disminuir {
+                width: 1.5rem;
+                height: 1.5rem;
+                border: none;
+                background-color: #0a0a0a; }
+                .div-modal-carrito .div-carrito .card-carrito .div-card-carrito .grid-cantidad .div-cantidad .div-btn-a-d .btn-disminuir .span-icon-disminuir {
+                  width: 1.5rem;
+                  height: 1.5rem;
+                  font-size: 20px;
+                  color: #acacac; }
+                  .div-modal-carrito .div-carrito .card-carrito .div-card-carrito .grid-cantidad .div-cantidad .div-btn-a-d .btn-disminuir .span-icon-disminuir:hover {
+                    font-size: 20px;
+                    color: #d63939; }
+        .div-modal-carrito .div-carrito .card-carrito .div-card-carrito .grid-btn-eliminar {
+          grid-area: grid-btn-eliminar;
+          display: flex;
+          justify-content: end; }
+          .div-modal-carrito .div-carrito .card-carrito .div-card-carrito .grid-btn-eliminar .btn-close-cards {
+            background-color: #0a0a0a;
+            border: none;
+            width: 1.6rem;
+            height: 1.6rem; }
+            .div-modal-carrito .div-carrito .card-carrito .div-card-carrito .grid-btn-eliminar .btn-close-cards .btn-remove-cards {
+              color: #ffffff;
+              font-size: 20px; }
+              .div-modal-carrito .div-carrito .card-carrito .div-card-carrito .grid-btn-eliminar .btn-close-cards .btn-remove-cards:hover {
+                color: #d8d8d8; }
+        .div-modal-carrito .div-carrito .card-carrito .div-card-carrito .grid-nombre-carrito {
+          grid-area: grid-nombre-carrito;
+          display: flex;
+          align-items: center; }
+          .div-modal-carrito .div-carrito .card-carrito .div-card-carrito .grid-nombre-carrito .a-nombre-carrito {
+            text-decoration: none; }
+            .div-modal-carrito .div-carrito .card-carrito .div-card-carrito .grid-nombre-carrito .a-nombre-carrito:hover {
+              text-decoration: underline 1px solid white; }
+            .div-modal-carrito .div-carrito .card-carrito .div-card-carrito .grid-nombre-carrito .a-nombre-carrito .nombre-carrito {
+              text-align: center;
+              font-family: "Mukta", sans-serif;
+              font-weight: 300;
+              margin-top: 1.3rem;
+              font-size: 1.05rem;
+              color: #ffffff; }
+        .div-modal-carrito .div-carrito .card-carrito .div-card-carrito .grid-precio-carrito {
+          grid-area: grid-precio-carrito;
+          display: flex;
+          justify-content: center; }
+          .div-modal-carrito .div-carrito .card-carrito .div-card-carrito .grid-precio-carrito .precio-carrito {
+            width: 6rem;
+            text-align: center;
+            font-family: "Mukta", sans-serif;
+            margin-right: 0.4rem;
+            margin-top: 1.3rem;
+            margin-left: 1rem;
+            font-weight: 300;
+            font-size: 1.4rem;
+            color: #5f9ea0; }
+          .div-modal-carrito .div-carrito .card-carrito .div-card-carrito .grid-precio-carrito .cuotas-carrito {
+            margin-top: 0.7rem;
+            font-family: "Mukta", sans-serif;
+            font-weight: 300;
+            font-size: 1rem;
+            color: #F27649;
+            text-align: center; }
+    .div-modal-carrito .div-carrito .div-p-total {
+      background-color: #0a0a0a;
+      display: flex;
+      box-shadow: 0 -5px 10px -5px #333;
+      justify-content: center;
+      flex-direction: column;
+      height: 5.5rem; }
+      .div-modal-carrito .div-carrito .div-p-total .p-total-carrito {
+        font-size: 1.8rem;
+        align-self: end;
+        height: 2rem;
+        text-align: center;
+        width: 100%;
+        font-family: "Mukta", sans-serif;
+        color: #ffffff; }
+      .div-modal-carrito .div-carrito .div-p-total .total-seis-cuotas {
+        font-size: 1.1rem;
+        font-weight: 400;
+        font-family: "Mukta", sans-serif;
+        color: #F27649; }
+    .div-modal-carrito .div-carrito .btn-comprar-carrito {
+      background-color: #5f9ea0;
+      transition: 0.5s;
+      border: none;
+      font-family: "Mukta", sans-serif;
+      position: relative;
+      width: 100%;
+      align-self: end;
+      font-weight: 400;
+      color: black;
+      height: 3rem; }
+      .div-modal-carrito .div-carrito .btn-comprar-carrito:hover {
+        background-color: #66a9ac; }
+    .div-modal-carrito .div-carrito .div-btn-carrito {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 3rem; }
+      .div-modal-carrito .div-carrito .div-btn-carrito .btn-vaciar-carrito {
+        background-color: #d63939;
+        border: none;
+        transition: 0.5s;
+        font-family: "Mukta", sans-serif;
+        position: relative;
+        border-bottom-left-radius: 0.5rem;
+        width: 100%;
+        font-weight: 200;
+        color: #ffffff; }
+        .div-modal-carrito .div-carrito .div-btn-carrito .btn-vaciar-carrito:hover {
+          background-color: #df3d3d; }
+      .div-modal-carrito .div-carrito .div-btn-carrito .btn-cerrar-carrito {
+        background-color: #525252;
+        border: none;
+        font-family: "Mukta", sans-serif;
+        position: relative;
+        border-bottom-right-radius: 0.5rem;
+        width: 100%;
+        transition: 0.5s;
+        font-weight: 200;
+        color: #ffffff; }
+        .div-modal-carrito .div-carrito .div-btn-carrito .btn-cerrar-carrito:hover {
+          background-color: #585858; }
+
+.envio-active {
+  visibility: visible;
+  opacity: 1; }
+
+body {
+  background-color: #0a0a0a;
+  overflow: hidden; }
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #050505; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #353535;
+  border: 1px solid #5e5e5e; }
+
+@media only screen and (max-width: 575px) {
+  .desktop {
+    display: none; }
+  .mobile header .nav {
+    background-color: #000000;
+    z-index: 1; }
+    .mobile header .nav div a .logo-header-mobile {
+      position: absolute;
+      position: fixed;
+      width: 14rem;
+      top: 1.4rem;
+      left: 1rem; }
+    .mobile header .nav div .icon-menu-bordes {
+      position: relative;
+      left: 1rem;
+      width: 2.5rem;
+      height: 2.35rem; }
+      .mobile header .nav div .icon-menu-bordes .icon-menu {
+        width: 1.5rem;
+        position: relative;
+        right: 0.3rem; }
+    .mobile header .nav div div ul li .icon-usuario {
+      width: 4rem;
+      opacity: 0.7; }
+    .mobile header .nav div div ul li .margin-ayuda {
+      margin-bottom: 2.5rem; }
+    .mobile header .nav div div ul .menu {
+      font-size: 1.15rem;
+      font-weight: 300;
+      margin-top: 2rem;
+      text-align: center;
+      font-family: "Mukta", sans-serif; }
+    .mobile header .nav div div ul .ayuda {
+      border-bottom: #acacac 1px solid; }
+    .mobile header .nav div div ul .usuario-texto {
+      font-size: 0.85rem;
+      font-weight: 300;
+      margin-top: 1.5rem;
+      text-align: center;
+      font-family: "Mukta", sans-serif;
+      font-weight: 300; }
+  .carrito-icon-mobile {
+    position: relative;
+    left: 75.5vw;
+    position: fixed;
+    top: 0;
+    z-index: 1; }
+    .carrito-icon-mobile .p-texto-carrito {
+      position: relative;
+      top: 0.5rem;
+      visibility: hidden;
+      width: 1.8rem;
+      font-size: 0.8rem;
+      left: 0.8rem;
+      color: #ffffff; }
+    .carrito-icon-mobile .icon-carrito {
+      z-index: 1;
+      width: 1.8rem;
+      top: 1.8rem;
+      left: 1%;
+      opacity: 1;
+      position: absolute;
+      color: white;
+      visibility: hidden;
+      transition: 0.4s; }
+      .carrito-icon-mobile .icon-carrito:hover {
+        color: #F27649; } }
+
+@media only screen and (max-width: 575px) and (max-width: 450px) {
+  .mobile header .nav div a .logo-header-mobile {
+    position: absolute;
+    position: fixed;
+    width: 13rem;
+    top: 1.4rem;
+    left: 0.5rem; }
+  .carrito-icon-mobile {
+    left: 72vw; } }
+
+@media only screen and (max-width: 575px) {
+  .section-logo-index div div .logo {
+    position: relative;
+    top: 7rem;
+    width: 100%;
+    left: 1%; }
+  .section-publicidad {
+    height: 24rem; }
+    .section-publicidad .animacion-publicidad {
+      border: #5f9ea0 1px solid;
+      animation-name: border-anim;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in;
+      animation-duration: 5s; }
+  @keyframes border-anim {
+    0% {
+      border: #5f9ea0 1px solid; }
+    25% {
+      border: #5f9ea0 1px solid; }
+    50% {
+      border: #F27649 1px solid; }
+    75% {
+      border: #F27649 1px solid; }
+    100% {
+      border: #5f9ea0 1px solid; } }
+    .section-publicidad .row-publicidad-index {
+      display: grid;
+      width: 90%;
+      height: 75%;
+      margin-top: 12rem;
+      margin-left: 5%;
+      border-radius: 0.5rem;
+      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-rows: 20% 80%;
+      grid-template-areas: "div-publicidad div-publicidad div-publicidad div-publicidad" "div-carrousel-1 div-carrousel-1 div-carrousel-2 div-carrousel-2"; }
+      .section-publicidad .row-publicidad-index .div-publicidad {
+        grid-area: div-publicidad;
+        text-align: center; }
+        .section-publicidad .row-publicidad-index .div-publicidad a {
+          text-decoration: none; }
+          .section-publicidad .row-publicidad-index .div-publicidad a .div-a-publicidad {
+            position: relative;
+            text-decoration: underline 1px;
+            color: #d8d8d8;
+            top: 1.4rem;
+            font-weight: 300;
+            font-family: "Mukta", sans-serif;
+            font-size: 0.95rem; }
+      .section-publicidad .row-publicidad-index .div-carrousel-1 {
+        margin-top: 1rem;
+        grid-area: div-carrousel-1; }
+        .section-publicidad .row-publicidad-index .div-carrousel-1 .size-carrousel-1 {
+          width: 80%;
+          position: relative;
+          left: 13%; }
+          .section-publicidad .row-publicidad-index .div-carrousel-1 .size-carrousel-1 .border-carrousel-1 {
+            border-radius: 0.5rem; }
+      .section-publicidad .row-publicidad-index .div-carrousel-2 {
+        margin-top: 1rem;
+        grid-area: div-carrousel-2; }
+        .section-publicidad .row-publicidad-index .div-carrousel-2 .size-carrousel-2 {
+          width: 80%;
+          left: 6%;
+          position: relative; }
+          .section-publicidad .row-publicidad-index .div-carrousel-2 .size-carrousel-2 .border-carrousel-2 {
+            border-radius: 0.5rem; }
+      .section-publicidad .row-publicidad-index .div-carrousel-3 {
+        display: none; } }
+
+@media only screen and (max-width: 575px) and (max-width: 450px) {
+  .section-publicidad {
+    height: 17rem; }
+    .section-publicidad .row-publicidad-index {
+      display: grid;
+      width: 84%;
+      height: 80%;
+      margin-top: 10rem;
+      margin-left: 8%;
+      border-radius: 0.5rem;
+      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-rows: 20% 80%;
+      grid-template-areas: "div-publicidad div-publicidad div-publicidad div-publicidad" "div-carrousel-1 div-carrousel-1 div-carrousel-2 div-carrousel-2"; }
+      .section-publicidad .row-publicidad-index .div-carrousel-1 {
+        margin-top: 1rem;
+        grid-area: div-carrousel-1; }
+        .section-publicidad .row-publicidad-index .div-carrousel-1 .size-carrousel-1 {
+          width: 84%;
+          position: relative;
+          left: 8%; }
+      .section-publicidad .row-publicidad-index .div-carrousel-2 {
+        margin-top: 1rem;
+        grid-area: div-carrousel-2; }
+        .section-publicidad .row-publicidad-index .div-carrousel-2 .size-carrousel-2 {
+          width: 84%;
+          left: 4%;
+          position: relative; } }
+
+@media only screen and (max-width: 575px) and (max-width: 429px) {
+  .section-productos {
+    position: relative;
+    left: 0;
+    margin-top: 7.5rem;
+    margin-bottom: 2rem; }
+    .section-productos .titulo-productos {
+      position: relative;
+      width: 100%;
+      height: 3.5rem;
+      left: 0;
+      font-weight: 300;
+      font-size: 1.7rem;
+      text-align: center;
+      font-family: "Mukta", sans-serif;
+      color: #d8d8d8;
+      border-bottom: 1px solid #444444; }
+    .section-productos div .div-row-productos {
+      position: relative;
+      height: 150rem;
+      width: 100%; }
+      .section-productos div .div-row-productos .card-contenedor {
+        display: grid;
+        width: 88vw;
+        text-decoration: none;
+        border-radius: 0.4rem;
+        height: 10rem;
+        background-color: #0a0a0a;
+        border: 1px solid #F27649;
+        grid-template-columns: 47% 30% 21%;
+        grid-template-rows: 33% 37% 30%;
+        grid-template-areas: "img-card precio-card envio-card" "img-card texto-card texto-card" "img-card div-btn div-ver-mas"; }
+        .section-productos div .div-row-productos .card-contenedor .img-card {
+          grid-area: img-card;
+          width: 9.85rem;
+          border-top-left-radius: 0.4rem;
+          border-bottom-left-radius: 0.4rem; }
+        .section-productos div .div-row-productos .card-contenedor .precio-card {
+          color: #d8d8d8;
+          font-family: "Mukta", sans-serif;
+          font-weight: 200;
+          font-size: 1.1rem;
+          grid-area: precio-card;
+          align-self: center;
+          margin-top: 0.2rem;
+          margin-left: 2.3rem;
+          margin-right: 0; }
+        .section-productos div .div-row-productos .card-contenedor .envio-card {
+          color: #d8d8d8;
+          font-family: "Mukta", sans-serif;
+          font-weight: 300;
+          font-size: 0.7rem;
+          grid-area: envio-card;
+          align-self: center;
+          margin-top: 0.2rem;
+          margin-left: 0;
+          margin-right: 0.7rem;
+          color: #60d6b3;
+          justify-self: end; }
+        .section-productos div .div-row-productos .card-contenedor .texto-card {
+          color: #d8d8d8;
+          font-family: "Mukta", sans-serif;
+          font-weight: 200;
+          font-size: 1rem;
+          grid-area: texto-card;
+          align-self: center;
+          margin-top: 0.2rem;
+          margin-left: 2rem;
+          margin-right: 0;
+          width: 78%;
+          text-align: center; }
+        .section-productos div .div-row-productos .card-contenedor .div-btn-agregar {
+          grid-area: div-btn;
+          align-self: center;
+          margin-top: 0;
+          margin-left: 0;
+          margin-right: 0; }
+          .section-productos div .div-row-productos .card-contenedor .div-btn-agregar .btn-agregar-carrito {
+            background-color: #0a0a0a;
+            color: #5f9ea0;
+            text-align: center;
+            position: relative;
+            font-family: "Mukta", sans-serif;
+            font-weight: 200;
+            font-size: 0.85rem;
+            transition: 0.4s;
+            left: 0.5rem;
+            border: none;
+            animation-name: color-anim;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            animation-duration: 3s; }
+  @keyframes color-anim {
+    0% {
+      color: #5f9ea0; }
+    25% {
+      color: #5f9ea0; }
+    50% {
+      color: #F27649; }
+    75% {
+      color: #F27649; }
+    100% {
+      color: #5f9ea0; } }
+        .section-productos div .div-row-productos .card-contenedor .div-ver-mas {
+          grid-area: div-ver-mas;
+          align-self: center;
+          margin-top: 0;
+          margin-left: 0;
+          margin-right: 0; }
+          .section-productos div .div-row-productos .card-contenedor .div-ver-mas .btn-ver-mas {
+            position: relative;
+            left: 1.5rem;
+            font-size: 0.85rem;
+            font-family: "Mukta", sans-serif;
+            font-weight: 300;
+            color: #d8d8d8;
+            text-decoration: none;
+            text-align: center; } }
+
+@media only screen and (max-width: 575px) and (min-width: 430px) and (max-width: 575px) {
+  .section-productos {
+    position: relative;
+    left: 0;
+    margin-top: 7.5rem;
+    margin-bottom: 2rem; }
+    .section-productos .titulo-productos {
+      position: relative;
+      width: 100%;
+      height: 3.5rem;
+      left: 0;
+      font-weight: 300;
+      font-size: 1.7rem;
+      text-align: center;
+      font-family: "Mukta", sans-serif;
+      color: #d8d8d8;
+      border-bottom: 1px solid #444444; }
+    .section-productos div .div-row-productos {
+      position: relative;
+      height: 210rem;
+      width: 95%; }
+      .section-productos div .div-row-productos .card-contenedor {
+        display: grid;
+        width: 87vw;
+        text-decoration: none;
+        border-radius: 0.4rem;
+        height: 11.6rem;
+        background-color: #0a0a0a;
+        border: 1px solid #F27649;
+        grid-template-columns: 50% 30% 20%;
+        grid-template-rows: 33% 37% 30%;
+        grid-template-areas: "img-card precio-card envio-card" "img-card texto-card texto-card" "img-card div-btn div-ver-mas"; }
+        .section-productos div .div-row-productos .card-contenedor .img-card {
+          grid-area: img-card;
+          width: 11.5rem;
+          border-top-left-radius: 0.4rem;
+          border-bottom-left-radius: 0.4rem; }
+        .section-productos div .div-row-productos .card-contenedor .precio-card {
+          color: #d8d8d8;
+          font-family: "Mukta", sans-serif;
+          font-weight: 300;
+          font-size: 1.4rem;
+          grid-area: precio-card;
+          align-self: center;
+          margin-top: 0.5rem;
+          margin-left: 0;
+          margin-right: 0; }
+        .section-productos div .div-row-productos .card-contenedor .envio-card {
+          color: #d8d8d8;
+          font-family: "Mukta", sans-serif;
+          font-weight: 300;
+          font-size: 0.8rem;
+          grid-area: envio-card;
+          align-self: center;
+          margin-top: 0.5rem;
+          margin-left: 0;
+          margin-right: 1rem;
+          color: #60d6b3;
+          justify-self: end; }
+        .section-productos div .div-row-productos .card-contenedor .texto-card {
+          color: #d8d8d8;
+          font-family: "Mukta", sans-serif;
+          font-weight: 200;
+          font-size: 1.1rem;
+          grid-area: texto-card;
+          align-self: center;
+          margin-top: 0;
+          margin-left: 0;
+          margin-right: 0; }
+        .section-productos div .div-row-productos .card-contenedor .div-btn-agregar {
+          grid-area: div-btn;
+          align-self: center;
+          margin-top: 0;
+          margin-left: 0;
+          margin-right: 0; }
+          .section-productos div .div-row-productos .card-contenedor .div-btn-agregar .btn-agregar-carrito {
+            background-color: #0a0a0a;
+            color: #5f9ea0;
+            text-align: center;
+            position: relative;
+            font-family: "Mukta", sans-serif;
+            font-weight: 200;
+            font-size: 0.9rem;
+            transition: 0.4s;
+            left: 0.5rem;
+            border: none;
+            animation-name: color-anim;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            animation-duration: 3s; }
+  @keyframes color-anim {
+    0% {
+      color: #5f9ea0; }
+    25% {
+      color: #5f9ea0; }
+    50% {
+      color: #F27649; }
+    75% {
+      color: #F27649; }
+    100% {
+      color: #5f9ea0; } }
+        .section-productos div .div-row-productos .card-contenedor .div-ver-mas {
+          grid-area: div-ver-mas;
+          align-self: center;
+          margin-top: 0;
+          margin-left: 0;
+          margin-right: 0; }
+          .section-productos div .div-row-productos .card-contenedor .div-ver-mas .btn-ver-mas {
+            position: relative;
+            left: 1.4rem;
+            font-size: 0.9rem;
+            font-family: "Mukta", sans-serif;
+            font-weight: 300;
+            color: #d8d8d8;
+            text-decoration: none;
+            text-align: center; } }
+
+@media only screen and (max-width: 575px) {
+  .section-paginas-productos {
+    width: 100%;
+    position: relative;
+    height: 128rem;
+    margin-top: 6rem;
+    left: 0; }
+    .section-paginas-productos .grid-padre-productos {
+      display: grid;
+      width: 100%;
+      position: relative;
+      height: 125rem;
+      margin-top: 0;
+      left: 0;
+      grid-template-columns: 100%;
+      grid-template-rows: 20% 20% 25% 6% 26%;
+      grid-template-areas: "grid-img-productos"  "grid-compra-productos" "grid-pagos-productos" "grid-garantia-productos" "grid-descripcion-productos"; }
+      .section-paginas-productos .grid-padre-productos .grid-img-productos {
+        grid-area: grid-img-productos;
+        width: 76%;
+        justify-self: center;
+        align-self: center;
+        border-radius: 0.5rem; }
+      .section-paginas-productos .grid-padre-productos .grid-compra-productos {
+        grid-area: grid-compra-productos;
+        width: 100%;
+        height: 100%; }
+        .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-compra-titulo {
+          position: relative;
+          width: 90%;
+          height: 6.5rem;
+          left: 5%;
+          border-bottom: 1px solid #444444;
+          top: 1rem; }
+          .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-compra-titulo .h2-titulo-producto {
+            font-family: "Mukta", sans-serif;
+            position: relative;
+            top: 0.5rem;
+            font-weight: 200;
+            font-size: 1.7rem;
+            color: #d8d8d8; }
+        .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-envio-compra {
+          position: relative;
+          width: 90%;
+          height: 5rem;
+          left: 5%;
+          border-bottom: 1px solid #444444; }
+          .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-envio-compra .envio-compra {
+            font-family: "Mukta", sans-serif;
+            position: relative;
+            top: 2rem;
+            font-weight: 300;
+            font-size: 1rem;
+            color: #5f9ea0; }
+          .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-envio-compra .modal-envio-compra {
+            position: relative;
+            top: 2rem;
+            color: #b3b3b3;
+            font-size: 1rem;
+            font-family: "Mukta", sans-serif;
+            background-color: #0a0a0a;
+            font-weight: 200;
+            border: none; }
+            .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-envio-compra .modal-envio-compra:hover {
+              text-decoration: underline 1px; }
+          .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-envio-compra div div .modal-codigo-postal {
+            position: relative;
+            left: 10%;
+            height: 9rem; }
+            .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-envio-compra div div .modal-codigo-postal .input-codigo {
+              width: 80%;
+              height: 2rem;
+              font-size: 1.2rem;
+              border-radius: 0.4rem;
+              font-weight: 300;
+              font-family: "Mukta", sans-serif;
+              text-align: start;
+              opacity: 0.5;
+              transition: 1s; }
+              .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-envio-compra div div .modal-codigo-postal .input-codigo:focus {
+                opacity: 1; }
+        .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-precio-compra {
+          position: relative;
+          width: 90%;
+          height: 11rem;
+          left: 5%;
+          border-bottom: 1px solid #444444; }
+          .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-precio-compra .precio-compra {
+            font-family: "Mukta", sans-serif;
+            position: relative;
+            top: 1.8rem;
+            font-weight: 200;
+            font-size: 2rem;
+            color: #d8d8d8; }
+          .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-precio-compra .p-cuotas-compra {
+            font-family: "Mukta", sans-serif;
+            position: relative;
+            top: 2.5rem;
+            font-weight: 200;
+            font-size: 1rem;
+            color: #b3b3b3; }
+            .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-precio-compra .p-cuotas-compra .strong-cuotas {
+              font-family: "Mukta", sans-serif;
+              position: relative;
+              top: 0;
+              font-weight: 300;
+              font-size: 1rem;
+              color: #F27649; }
+          .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-precio-compra .medios-pago-compra {
+            position: relative;
+            top: 3rem;
+            color: #b3b3b3;
+            font-size: 1rem;
+            font-family: "Mukta", sans-serif;
+            background-color: #0a0a0a;
+            font-weight: 200;
+            border: none; }
+            .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-precio-compra .medios-pago-compra:hover {
+              text-decoration: underline 1px; }
+      .section-paginas-productos .grid-padre-productos .grid-pagos-productos {
+        grid-area: grid-pagos-productos;
+        width: 100%;
+        height: 100%; }
+        .section-paginas-productos .grid-padre-productos .grid-pagos-productos .div-medios-pagos {
+          position: relative;
+          width: 90%;
+          height: 100%;
+          left: 5%;
+          border-bottom: 1px solid #444444; }
+          .section-paginas-productos .grid-padre-productos .grid-pagos-productos .div-medios-pagos .h3-medios-pagos {
+            font-family: "Mukta", sans-serif;
+            position: relative;
+            top: 1rem;
+            font-weight: 200;
+            font-size: 1.5rem;
+            color: #d8d8d8; }
+          .section-paginas-productos .grid-padre-productos .grid-pagos-productos .div-medios-pagos .h4-pagos {
+            font-family: "Mukta", sans-serif;
+            position: relative;
+            top: 0;
+            font-weight: 200;
+            font-size: 1.2rem;
+            color: #b3b3b3; }
+          .section-paginas-productos .grid-padre-productos .grid-pagos-productos .div-medios-pagos .medio-credito {
+            position: relative;
+            top: 1.5rem; }
+          .section-paginas-productos .grid-padre-productos .grid-pagos-productos .div-medios-pagos .medio-debito {
+            position: relative;
+            top: 3.5rem; }
+          .section-paginas-productos .grid-padre-productos .grid-pagos-productos .div-medios-pagos .medio-efectivo {
+            position: relative;
+            top: 4.5rem; }
+          .section-paginas-productos .grid-padre-productos .grid-pagos-productos .div-medios-pagos .img-medios-pagos-credito {
+            position: relative;
+            top: 2rem;
+            width: 18rem; }
+          .section-paginas-productos .grid-padre-productos .grid-pagos-productos .div-medios-pagos .img-medios-pagos-debito {
+            position: relative;
+            top: 3.5rem;
+            width: 18rem; }
+          .section-paginas-productos .grid-padre-productos .grid-pagos-productos .div-medios-pagos .img-medios-pagos-efectivo {
+            position: relative;
+            top: 5rem;
+            width: 11rem; }
+          .section-paginas-productos .grid-padre-productos .grid-pagos-productos .div-medios-pagos .medios-pago-compra {
+            position: relative;
+            top: 5rem;
+            color: #b3b3b3;
+            font-size: 1rem;
+            font-family: "Mukta", sans-serif;
+            background-color: #0a0a0a;
+            font-weight: 200;
+            border: none;
+            margin-top: 1rem;
+            left: 1rem;
+            display: block; }
+            .section-paginas-productos .grid-padre-productos .grid-pagos-productos .div-medios-pagos .medios-pago-compra:hover {
+              text-decoration: underline 1px; }
+      .section-paginas-productos .grid-padre-productos .grid-garantia-productos {
+        grid-area: grid-garantia-productos;
+        width: 100%;
+        height: 100%; }
+        .section-paginas-productos .grid-padre-productos .grid-garantia-productos .div-garantia {
+          position: relative;
+          width: 90%;
+          height: 100%;
+          left: 5%;
+          border-bottom: 1px solid #444444; }
+          .section-paginas-productos .grid-padre-productos .grid-garantia-productos .div-garantia .h3-garantia {
+            font-family: "Mukta", sans-serif;
+            position: relative;
+            top: 1rem;
+            font-weight: 200;
+            font-size: 1.5rem;
+            color: #d8d8d8; }
+          .section-paginas-productos .grid-padre-productos .grid-garantia-productos .div-garantia .div-compra-protegida {
+            display: flex;
+            position: relative;
+            width: 95%;
+            top: 1.5rem; }
+            .section-paginas-productos .grid-padre-productos .grid-garantia-productos .div-garantia .div-compra-protegida .icon-compra-protegida {
+              width: 2.4rem;
+              height: 2.4rem; }
+            .section-paginas-productos .grid-padre-productos .grid-garantia-productos .div-garantia .div-compra-protegida .p-compra-protegida {
+              font-family: "Mukta", sans-serif;
+              position: relative;
+              top: 0.7rem;
+              font-weight: 200;
+              font-size: 1rem;
+              color: #b3b3b3;
+              left: 1rem; }
+      .section-paginas-productos .grid-padre-productos .grid-descripcion-productos {
+        grid-area: grid-descripcion-productos;
+        width: 100%;
+        height: 100%; }
+        .section-paginas-productos .grid-padre-productos .grid-descripcion-productos .div-descripcion {
+          position: relative;
+          width: 90%;
+          height: 20%;
+          left: 5%;
+          border-bottom: 1px solid #444444; }
+          .section-paginas-productos .grid-padre-productos .grid-descripcion-productos .div-descripcion .h3-titulo-descripcion {
+            font-family: "Mukta", sans-serif;
+            position: relative;
+            top: 2rem;
+            font-weight: 200;
+            font-size: 1.4rem;
+            color: #d8d8d8;
+            text-align: center; }
+        .section-paginas-productos .grid-padre-productos .grid-descripcion-productos .div-p-descripcion {
+          position: relative;
+          width: 90%;
+          height: 80%;
+          left: 5%; }
+          .section-paginas-productos .grid-padre-productos .grid-descripcion-productos .div-p-descripcion .p-descripcion {
+            font-family: "Mukta", sans-serif;
+            position: relative;
+            top: 2rem;
+            font-weight: 200;
+            font-size: 1.05rem;
+            color: #b3b3b3; } }
+
+@media only screen and (max-width: 575px) and (max-width: 425px) {
+  .section-paginas-productos {
+    width: 100%;
+    position: relative;
+    height: 127rem;
+    margin-top: 6rem;
+    left: 0; }
+    .section-paginas-productos .grid-padre-productos {
+      grid-template-rows: 17% 30% 21% 7% 25%; }
+      .section-paginas-productos .grid-padre-productos .grid-img-productos {
+        width: 85%; } }
+
+@media only screen and (max-width: 575px) {
+  .section-nosotros {
+    height: 82rem;
+    display: flex;
+    justify-content: center; }
+    .section-nosotros .div-contenedor-nosotros {
+      width: 90%;
+      position: relative;
+      height: 73rem;
+      top: 7rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center; }
+      .section-nosotros .div-contenedor-nosotros div .titulo-nosotros {
+        font-size: 1.5rem;
+        font-family: "Mukta", sans-serif;
+        text-align: center;
+        font-weight: 300;
+        color: #d8d8d8; }
+      .section-nosotros .div-contenedor-nosotros div .p-texto-nosotros {
+        position: relative;
+        left: 5%;
+        width: 90%;
+        font-weight: 200;
+        font-size: 1.05rem;
+        color: #b3b3b3;
+        font-family: "Mukta", sans-serif; }
+      .section-nosotros .div-contenedor-nosotros div .img-nosotros {
+        border-radius: 0.5rem;
+        position: relative;
+        left: 5%;
+        width: 90%; }
+  .section-ayuda {
+    position: relative;
+    height: 44rem; }
+    .section-ayuda .titulo-ayuda {
+      font-family: "Mukta", sans-serif;
+      text-align: center;
+      color: #d8d8d8;
+      text-align: center;
+      position: relative;
+      top: 7rem;
+      font-size: 1.4rem;
+      font-weight: 300; }
+    .section-ayuda .subtitulo-ayuda {
+      font-family: "Mukta", sans-serif;
+      text-align: center;
+      color: #d8d8d8;
+      text-align: center;
+      position: relative;
+      top: 8rem;
+      font-size: 0.9rem;
+      font-weight: 200; }
+    .section-ayuda .div-pasos-ayuda {
+      position: relative;
+      top: 8rem;
+      display: grid;
+      height: 30rem;
+      grid-template-columns: 40% 60%;
+      grid-template-rows: 33.3% 33.3% 33.3%;
+      grid-template-areas: "img-paso1 div-texto-paso1" "img-paso2 div-texto-paso2" "img-paso3 div-texto-paso3"; }
+      .section-ayuda .div-pasos-ayuda .img-paso1 {
+        width: 7.5rem;
+        grid-area: img-paso1;
+        opacity: 0.5;
+        justify-self: center;
+        top: 0;
+        align-self: center;
+        position: relative; }
+      .section-ayuda .div-pasos-ayuda .img-paso2 {
+        width: 8rem;
+        grid-area: img-paso2;
+        opacity: 0.5;
+        justify-self: center;
+        top: 0;
+        align-self: center;
+        position: relative; }
+      .section-ayuda .div-pasos-ayuda .img-paso3 {
+        width: 8.5rem;
+        grid-area: img-paso3;
+        opacity: 0.5;
+        justify-self: center;
+        top: 1rem;
+        align-self: center;
+        position: relative; }
+      .section-ayuda .div-pasos-ayuda .div-texto-paso1 {
+        grid-area: div-texto-paso1;
+        justify-self: center;
+        align-self: center; }
+        .section-ayuda .div-pasos-ayuda .div-texto-paso1 .p-paso1 {
+          font-family: "Mukta", sans-serif;
+          top: 1rem;
+          font-weight: 200;
+          text-align: center;
+          color: #9b9b9b;
+          width: 75%;
+          position: relative;
+          left: 10%; }
+      .section-ayuda .div-pasos-ayuda .div-texto-paso2 {
+        grid-area: div-texto-paso2;
+        justify-self: center;
+        width: 90%;
+        align-self: center;
+        border-top: 1px solid #F27649;
+        border-bottom: 1px solid #F27649; }
+        .section-ayuda .div-pasos-ayuda .div-texto-paso2 .p-paso2 {
+          margin-bottom: 2rem;
+          font-family: "Mukta", sans-serif;
+          top: 1rem;
+          font-weight: 200;
+          text-align: center;
+          color: #9b9b9b;
+          width: 80%;
+          position: relative;
+          left: 10%; }
+      .section-ayuda .div-pasos-ayuda .div-texto-paso3 {
+        grid-area: div-texto-paso3;
+        justify-self: center;
+        align-self: center; }
+        .section-ayuda .div-pasos-ayuda .div-texto-paso3 .p-paso3 {
+          font-family: "Mukta", sans-serif;
+          top: 1rem;
+          font-weight: 200;
+          text-align: center;
+          color: #9b9b9b;
+          width: 80%;
+          position: relative;
+          left: 10%; }
+  .section-preguntas-frecuentes {
+    position: relative;
+    height: 32rem; }
+    .section-preguntas-frecuentes .titulo-preguntas-frecuentes {
+      font-family: "Mukta", sans-serif;
+      text-align: center;
+      color: #d8d8d8;
+      text-align: center;
+      position: relative;
+      top: 3rem;
+      font-size: 1.4rem;
+      font-weight: 300; }
+    .section-preguntas-frecuentes .div-preguntas1 {
+      width: 90%;
+      height: 10%;
+      border-bottom: #5f9ea0 1px solid;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      position: relative;
+      top: 7rem;
+      left: 5%;
+      overflow: hidden;
+      transition: 1s ease; }
+      .section-preguntas-frecuentes .div-preguntas1:hover {
+        width: 90%;
+        position: relative;
+        left: 5%;
+        height: 26.5%;
+        border-bottom: #F27649 1px solid;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem; }
+      .section-preguntas-frecuentes .div-preguntas1 .p-preguntas {
+        color: #d8d8d8;
+        font-family: "Mukta", sans-serif;
+        font-weight: 300;
+        font-size: 1rem;
+        text-align: center; }
+      .section-preguntas-frecuentes .div-preguntas1 .p-respuestas {
+        color: #969696;
+        font-family: "Mukta", sans-serif;
+        font-weight: 200;
+        margin-top: 1.5rem;
+        font-size: 0.9rem;
+        text-align: center; }
+    .section-preguntas-frecuentes .div-preguntas2 {
+      width: 90%;
+      height: 10%;
+      border-bottom: #5f9ea0 1px solid;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      position: relative;
+      top: 10rem;
+      left: 5%;
+      overflow: hidden;
+      transition: 1s ease; }
+      .section-preguntas-frecuentes .div-preguntas2:hover {
+        width: 90%;
+        position: relative;
+        left: 5%;
+        height: 26.5%;
+        border-bottom: #F27649 1px solid;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem; }
+      .section-preguntas-frecuentes .div-preguntas2 .p-preguntas {
+        color: #d8d8d8;
+        font-family: "Mukta", sans-serif;
+        font-weight: 300;
+        font-size: 1rem;
+        text-align: center; }
+      .section-preguntas-frecuentes .div-preguntas2 .p-respuestas {
+        color: #969696;
+        font-family: "Mukta", sans-serif;
+        font-weight: 200;
+        margin-top: 1.5rem;
+        font-size: 0.9rem;
+        text-align: center; }
+    .section-preguntas-frecuentes .div-preguntas3 {
+      width: 90%;
+      height: 10%;
+      border-bottom: #5f9ea0 1px solid;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      position: relative;
+      top: 13rem;
+      left: 5%;
+      overflow: hidden;
+      transition: 1s ease; }
+      .section-preguntas-frecuentes .div-preguntas3:hover {
+        width: 90%;
+        position: relative;
+        left: 5%;
+        height: 26.5%;
+        border-bottom: #F27649 1px solid;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem; }
+      .section-preguntas-frecuentes .div-preguntas3 .p-preguntas {
+        color: #d8d8d8;
+        font-family: "Mukta", sans-serif;
+        font-weight: 300;
+        font-size: 1rem;
+        text-align: center; }
+      .section-preguntas-frecuentes .div-preguntas3 .p-respuestas {
+        color: #969696;
+        font-family: "Mukta", sans-serif;
+        font-weight: 200;
+        margin-top: 1.5rem;
+        font-size: 0.9rem;
+        text-align: center; }
+  .footer__contenedor-padre {
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 7rem 4.5rem;
+    grid-template-areas: "footer__div-footer1 footer__div-instagram footer__div-facebook footer__div-whatsapp footer__div-footer2" "footer__div-correo footer__div-correo footer__div-telefono footer__div-copyright footer__div-copyright"; }
+    .footer__contenedor-padre .footer__div-footer1 {
+      grid-area: footer__div-footer1; }
+    .footer__contenedor-padre .footer__instagram {
+      grid: footer__div-instagram;
+      width: 2.7rem;
+      height: 2.7rem;
+      border-radius: 0.5rem;
+      justify-self: center;
+      transition: 1s ease;
+      align-self: center;
+      border-radius: 50%; }
+      .footer__contenedor-padre .footer__instagram .footer__icon-instagram--size {
+        width: 1rem;
+        margin-left: 0.77rem;
+        margin-top: 0.8rem;
+        opacity: 0.8; }
+    .footer__contenedor-padre .footer__facebook {
+      grid: footer__div-facebook;
+      width: 2.7rem;
+      height: 2.7rem;
+      border-radius: 0.5rem;
+      justify-self: center;
+      transition: 1s ease;
+      align-self: center;
+      border-radius: 50%; }
+      .footer__contenedor-padre .footer__facebook .footer__icon-facebook--size {
+        width: 1rem;
+        margin-left: 0.77rem;
+        margin-top: 0.8rem;
+        opacity: 0.8; }
+    .footer__contenedor-padre .footer__whatsapp {
+      grid: footer__div-whatsapp;
+      width: 2.7rem;
+      height: 2.7rem;
+      border-radius: 0.5rem;
+      justify-self: center;
+      transition: 1s ease;
+      align-self: center;
+      border-radius: 50%; }
+      .footer__contenedor-padre .footer__whatsapp .footer__icon-whatsapp--size {
+        width: 1.15rem;
+        margin-left: 0.7rem;
+        margin-top: 0.7rem;
+        opacity: 0.8; }
+    .footer__contenedor-padre .redes-animacion {
+      border: #5f9ea0 1px solid;
+      animation-name: border-anim;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in;
+      animation-duration: 5s; }
+  @keyframes border-anim {
+    0% {
+      border: #5f9ea0 1px solid; }
+    25% {
+      border: #5f9ea0 1px solid; }
+    50% {
+      border: #F27649 1px solid; }
+    75% {
+      border: #F27649 1px solid; }
+    100% {
+      border: #5f9ea0 1px solid; } }
+    .footer__contenedor-padre .footer__correo {
+      grid-area: footer__div-correo;
+      justify-self: end; }
+      .footer__contenedor-padre .footer__correo .footer__correo--texto {
+        color: #8b8b8b;
+        text-align: center;
+        font-family: "Mukta", sans-serif;
+        font-weight: 300;
+        position: relative;
+        font-size: 0.85rem;
+        top: 0.5rem;
+        right: 0.3rem; }
+    .footer__contenedor-padre .footer__telefono {
+      grid-area: footer__div-telefono; }
+      .footer__contenedor-padre .footer__telefono .footer__telefono--texto {
+        color: #8b8b8b;
+        text-align: center;
+        font-family: "Mukta", sans-serif;
+        font-weight: 300;
+        position: relative;
+        font-size: 0.85rem;
+        top: 0.5rem; }
+    .footer__contenedor-padre .telefono-bordes {
+      border-left: #5f9ea0 1px solid;
+      border-right: #5f9ea0 1px solid;
+      width: 100%;
+      height: 50%; }
+    .footer__contenedor-padre .telefono-animacion {
+      border-left: #5f9ea0 1px solid;
+      border-right: #5f9ea0 1px solid;
+      animation-name: bordes-animaciones;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in;
+      animation-duration: 5s; }
+  @keyframes bordes-animaciones {
+    0% {
+      border-right: #5f9ea0 1px solid;
+      border-left: #5f9ea0 1px solid; }
+    25% {
+      border-right: #5f9ea0 1px solid;
+      border-left: #5f9ea0 1px solid; }
+    50% {
+      border-right: #F27649 1px solid;
+      border-left: #F27649 1px solid; }
+    75% {
+      border-right: #F27649 1px solid;
+      border-left: #F27649 1px solid; }
+    100% {
+      border-right: #5f9ea0 1px solid;
+      border-left: #5f9ea0 1px solid; } }
+    .footer__contenedor-padre .footer__copyright {
+      grid-area: footer__div-copyright; }
+      .footer__contenedor-padre .footer__copyright .footer__copyright--texto {
+        color: #8b8b8b;
+        text-align: start;
+        font-family: "Mukta", sans-serif;
+        font-weight: 300;
+        position: relative;
+        font-size: 0.85rem;
+        top: 0.5rem;
+        margin-left: 0.3rem; }
+    .footer__contenedor-padre .footer__div-footer2 {
+      grid-area: footer__div-footer2; } }
+
+@media only screen and (max-width: 575px) and (max-width: 415px) {
+  .footer__contenedor-padre .footer__correo .footer__correo--texto {
+    color: #8b8b8b;
+    text-align: center;
+    font-family: "Mukta", sans-serif;
+    font-weight: 300;
+    position: relative;
+    font-size: 0.75rem;
+    top: 0.5rem;
+    right: 0.2rem; }
+  .footer__contenedor-padre .footer__telefono .footer__telefono--texto {
+    color: #8b8b8b;
+    text-align: center;
+    font-family: "Mukta", sans-serif;
+    font-weight: 300;
+    position: relative;
+    font-size: 0.75rem;
+    top: 0.5rem; }
+  .footer__contenedor-padre .footer__copyright {
+    grid-area: footer__div-copyright; }
+    .footer__contenedor-padre .footer__copyright .footer__copyright--texto {
+      color: #8b8b8b;
+      text-align: start;
+      font-family: "Mukta", sans-serif;
+      font-weight: 300;
+      position: relative;
+      font-size: 0.75rem;
+      top: 0.5rem;
+      margin-left: 0.2rem; } }
+
+@media only screen and (max-width: 575px) and (max-width: 360px) {
+  .footer__contenedor-padre .footer__correo .footer__correo--texto {
+    color: #8b8b8b;
+    text-align: center;
+    font-family: "Mukta", sans-serif;
+    font-weight: 300;
+    position: relative;
+    font-size: 0.7rem;
+    top: 0.5rem;
+    right: 0.1rem; }
+  .footer__contenedor-padre .footer__telefono .footer__telefono--texto {
+    color: #8b8b8b;
+    text-align: center;
+    font-family: "Mukta", sans-serif;
+    font-weight: 300;
+    position: relative;
+    font-size: 0.7rem;
+    top: 0.5rem; }
+  .footer__contenedor-padre .footer__copyright {
+    grid-area: footer__div-copyright; }
+    .footer__contenedor-padre .footer__copyright .footer__copyright--texto {
+      color: #8b8b8b;
+      text-align: start;
+      font-family: "Mukta", sans-serif;
+      font-weight: 300;
+      position: relative;
+      font-size: 0.7rem;
+      top: 0.5rem;
+      margin-left: 0.1rem; } }
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  .desktop {
+    display: none; }
+  .mobile header .nav {
+    background-color: #000000;
+    z-index: 1; }
+    .mobile header .nav div a .logo-header-mobile {
+      position: absolute;
+      position: fixed;
+      width: 15rem;
+      top: 1.3rem;
+      left: 1rem; }
+    .mobile header .nav div div ul li .icon-usuario {
+      width: 4rem; }
+    .mobile header .nav div div ul li .margin-ayuda {
+      margin-bottom: 2.5rem; }
+    .mobile header .nav div div ul .menu {
+      font-size: 1.3rem;
+      font-weight: 300;
+      margin-top: 2rem;
+      text-align: center;
+      font-family: "Mukta", sans-serif; }
+    .mobile header .nav div div ul .ayuda {
+      border-bottom: #acacac 1px solid; }
+    .mobile header .nav div div ul .usuario-texto {
+      font-size: 1rem;
+      font-weight: 300;
+      margin-top: 1rem;
+      text-align: center;
+      font-family: "Mukta", sans-serif; }
+  .carrito-icon-tablet {
+    position: relative;
+    left: 82vw;
+    position: fixed;
+    top: 0.1rem;
+    z-index: 1; }
+    .carrito-icon-tablet .p-texto-carrito {
+      position: relative;
+      top: 0.5rem;
+      visibility: hidden;
+      z-index: 2;
+      width: 1.9rem;
+      left: 0.8rem;
+      color: #ffffff; }
+    .carrito-icon-tablet .icon-carrito {
+      z-index: 1;
+      width: 2rem;
+      top: 1.9rem;
+      left: 1%;
+      opacity: 1;
+      position: absolute;
+      color: white;
+      visibility: hidden;
+      transition: 0.4s; }
+      .carrito-icon-tablet .icon-carrito:hover {
+        color: #F27649; } }
+
+@media only screen and (min-width: 576px) and (max-width: 991px) and (max-width: 767px) {
+  .mobile header .nav div .div-carrito-mobile .p-texto-carrito {
+    position: absolute;
+    top: 2rem;
+    left: 92vw;
+    font-size: 0.7rem;
+    color: #ffffff;
+    font-family: "Mukta", sans-serif;
+    font-weight: 400; }
+  .mobile header .nav div .div-carrito-mobile .icon-carrito-mobile {
+    z-index: 1;
+    width: 1.7rem;
+    top: 1.9rem;
+    left: 77vw;
+    opacity: 0.7; }
+  .carrito-icon-mobile {
+    left: 75vw; } }
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  .section-logo-index div div .logo {
+    position: relative;
+    top: 7rem;
+    width: 88%;
+    left: 7%; }
+  .section-publicidad {
+    height: 25rem; }
+    .section-publicidad .animacion-publicidad {
+      border: #5f9ea0 1px solid;
+      animation-name: border-anim;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in;
+      animation-duration: 5s; }
+  @keyframes border-anim {
+    0% {
+      border: #5f9ea0 1px solid; }
+    25% {
+      border: #5f9ea0 1px solid; }
+    50% {
+      border: #F27649 1px solid; }
+    75% {
+      border: #F27649 1px solid; }
+    100% {
+      border: #5f9ea0 1px solid; } }
+    .section-publicidad .row-publicidad-index {
+      display: grid;
+      height: 78%;
+      margin-top: 12rem;
+      border-radius: 0.5rem;
+      grid-template-columns: 33.34% 33.34% 33.34%;
+      grid-template-rows: 5rem 14.5rem;
+      grid-template-areas: "div-publicidad div-publicidad div-publicidad" "div-carrousel-1 div-carrousel-2 div-carrousel-3"; }
+      .section-publicidad .row-publicidad-index .div-publicidad {
+        grid-area: div-publicidad;
+        text-align: center; }
+        .section-publicidad .row-publicidad-index .div-publicidad a {
+          text-decoration: none; }
+          .section-publicidad .row-publicidad-index .div-publicidad a .div-a-publicidad {
+            position: relative;
+            color: #d8d8d8;
+            top: 2.3rem;
+            font-weight: 300;
+            font-family: "Mukta", sans-serif;
+            text-decoration: underline 1px;
+            font-size: 1.1rem; }
+      .section-publicidad .row-publicidad-index .div-carrousel-1 {
+        grid-area: div-carrousel-1;
+        align-self: center; }
+        .section-publicidad .row-publicidad-index .div-carrousel-1 .size-carrousel-1 {
+          width: 90%;
+          margin-left: 0.6rem; }
+          .section-publicidad .row-publicidad-index .div-carrousel-1 .size-carrousel-1 .border-carrousel-1 {
+            border-radius: 1rem; }
+      .section-publicidad .row-publicidad-index .div-carrousel-2 {
+        grid-area: div-carrousel-2;
+        align-self: center; }
+        .section-publicidad .row-publicidad-index .div-carrousel-2 .size-carrousel-2 {
+          width: 90%;
+          margin-left: 0.6rem; }
+          .section-publicidad .row-publicidad-index .div-carrousel-2 .size-carrousel-2 .border-carrousel-2 {
+            border-radius: 1rem; }
+      .section-publicidad .row-publicidad-index .div-carrousel-3 {
+        grid-area: div-carrousel-3;
+        align-self: center; }
+        .section-publicidad .row-publicidad-index .div-carrousel-3 .size-carrousel-3 {
+          width: 90%;
+          margin-left: 0.6rem; }
+          .section-publicidad .row-publicidad-index .div-carrousel-3 .size-carrousel-3 .border-carrousel-3 {
+            border-radius: 1rem; } }
+
+@media only screen and (min-width: 576px) and (max-width: 991px) and (min-width: 576px) and (max-width: 767px) {
+  .section-publicidad {
+    height: 22rem; }
+    .section-publicidad .row-publicidad-index {
+      height: 80%;
+      grid-template-rows: 4.5rem 13rem; }
+      .section-publicidad .row-publicidad-index .div-carrousel-1 .size-carrousel-1 {
+        width: 95%;
+        margin-left: 0.3rem; }
+      .section-publicidad .row-publicidad-index .div-carrousel-2 .size-carrousel-2 {
+        width: 95%;
+        margin-left: 0.3rem; }
+      .section-publicidad .row-publicidad-index .div-carrousel-3 .size-carrousel-3 {
+        width: 95%;
+        margin-left: 0.3rem; } }
+
+@media only screen and (min-width: 576px) and (max-width: 991px) and (min-width: 576px) and (max-width: 767px) {
+  .section-productos {
+    position: relative;
+    left: 0;
+    margin-top: 8rem;
+    margin-bottom: 3rem; }
+    .section-productos .titulo-productos {
+      position: relative;
+      width: 99.5%;
+      height: 3.5rem;
+      left: 0;
+      font-weight: 300;
+      font-size: 1.9rem;
+      text-align: center;
+      font-family: "Mukta", sans-serif;
+      color: #d8d8d8;
+      border-bottom: 1px solid #444444; }
+    .section-productos div .div-row-productos {
+      position: relative;
+      left: 1.5rem;
+      height: 156rem; }
+      .section-productos div .div-row-productos .card-contenedor {
+        display: grid;
+        width: 14rem;
+        text-decoration: none;
+        border-radius: 0.4rem;
+        height: 24rem;
+        background-color: #0a0a0a;
+        border: 1px solid #F27649;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 58% 14% 14% 14%;
+        grid-template-areas: "img-card img-card" "precio-card envio-card" "texto-card texto-card" "div-btn div-ver-mas"; }
+        .section-productos div .div-row-productos .card-contenedor .img-card {
+          grid-area: img-card;
+          width: 100%;
+          border-top-left-radius: 0.4rem;
+          border-top-right-radius: 0.4rem; }
+        .section-productos div .div-row-productos .card-contenedor .precio-card {
+          color: #d8d8d8;
+          font-family: "Mukta", sans-serif;
+          font-weight: 300;
+          font-size: 1.2rem;
+          grid-area: precio-card;
+          align-self: center;
+          margin-top: 0;
+          margin-left: 1rem;
+          margin-right: 0; }
+        .section-productos div .div-row-productos .card-contenedor .envio-card {
+          color: #d8d8d8;
+          font-family: "Mukta", sans-serif;
+          font-weight: 300;
+          font-size: 0.8rem;
+          grid-area: envio-card;
+          align-self: center;
+          margin-top: 0;
+          margin-left: 0;
+          margin-right: 0.3rem;
+          color: #5f9ea0;
+          justify-self: end; }
+        .section-productos div .div-row-productos .card-contenedor .texto-card {
+          color: #d8d8d8;
+          font-family: "Mukta", sans-serif;
+          font-weight: 200;
+          font-size: 1rem;
+          grid-area: texto-card;
+          align-self: center;
+          margin-top: 0;
+          margin-left: 0;
+          margin-right: 0;
+          width: 95%;
+          position: relative;
+          left: 2.5%;
+          text-align: center; }
+        .section-productos div .div-row-productos .card-contenedor .div-btn-agregar {
+          grid-area: div-btn;
+          align-self: center;
+          margin-top: 0;
+          margin-left: 0;
+          margin-right: 0; }
+          .section-productos div .div-row-productos .card-contenedor .div-btn-agregar .btn-agregar-carrito {
+            background-color: #0a0a0a;
+            color: #5f9ea0;
+            text-align: center;
+            position: relative;
+            font-family: "Mukta", sans-serif;
+            font-weight: 200;
+            transition: 0.4s;
+            left: 0.5rem;
+            border: none;
+            animation-name: color-anim;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            animation-duration: 3s; }
+  @keyframes color-anim {
+    0% {
+      color: #5f9ea0; }
+    25% {
+      color: #5f9ea0; }
+    50% {
+      color: #F27649; }
+    75% {
+      color: #F27649; }
+    100% {
+      color: #5f9ea0; } }
+        .section-productos div .div-row-productos .card-contenedor .div-ver-mas {
+          grid-area: div-ver-mas;
+          align-self: center;
+          margin-top: 0;
+          margin-left: 0;
+          margin-right: 0; }
+          .section-productos div .div-row-productos .card-contenedor .div-ver-mas .btn-ver-mas {
+            position: relative;
+            left: 2.2rem;
+            font-family: "Mukta", sans-serif;
+            font-weight: 300;
+            color: #d8d8d8;
+            text-decoration: none;
+            text-align: center; } }
+
+@media only screen and (min-width: 576px) and (max-width: 991px) and (min-width: 768px) and (max-width: 991px) {
+  .section-productos {
+    position: relative;
+    left: 0;
+    margin-top: 8rem;
+    margin-bottom: 4rem; }
+    .section-productos .titulo-productos {
+      position: relative;
+      width: 99%;
+      height: 3.5rem;
+      left: 0;
+      font-weight: 300;
+      font-size: 2rem;
+      text-align: center;
+      font-family: "Mukta", sans-serif;
+      color: #d8d8d8;
+      border-bottom: 1px solid #444444; }
+    .section-productos div .div-row-productos {
+      position: relative;
+      height: 105rem; }
+      .section-productos div .div-row-productos .card-contenedor {
+        display: grid;
+        width: 13.5rem;
+        text-decoration: none;
+        border-radius: 0.4rem;
+        height: 24rem;
+        background-color: #0a0a0a;
+        border: 1px solid #F27649;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 57% 14% 14% 14%;
+        grid-template-areas: "img-card img-card" "precio-card envio-card" "texto-card texto-card" "div-btn div-ver-mas"; }
+        .section-productos div .div-row-productos .card-contenedor .img-card {
+          grid-area: img-card;
+          width: 100%;
+          border-top-left-radius: 0.4rem;
+          border-top-right-radius: 0.4rem; }
+        .section-productos div .div-row-productos .card-contenedor .precio-card {
+          color: #d8d8d8;
+          font-family: "Mukta", sans-serif;
+          font-weight: 300;
+          font-size: 1.2rem;
+          grid-area: precio-card;
+          align-self: center;
+          margin-top: 0.5rem;
+          margin-left: 1rem;
+          margin-right: 0; }
+        .section-productos div .div-row-productos .card-contenedor .envio-card {
+          color: #d8d8d8;
+          font-family: "Mukta", sans-serif;
+          font-weight: 300;
+          font-size: 0.8rem;
+          grid-area: envio-card;
+          align-self: center;
+          margin-top: 0.5rem;
+          margin-left: 0;
+          margin-right: 1rem;
+          color: #60d6b3;
+          justify-self: end; }
+        .section-productos div .div-row-productos .card-contenedor .texto-card {
+          color: #d8d8d8;
+          font-family: "Mukta", sans-serif;
+          font-weight: 200;
+          font-size: 1rem;
+          grid-area: texto-card;
+          align-self: center;
+          margin-top: 0;
+          margin-left: 0;
+          margin-right: 0;
+          text-align: center;
+          position: relative;
+          width: 95%;
+          left: 2.5%; }
+        .section-productos div .div-row-productos .card-contenedor .div-btn-agregar {
+          grid-area: div-btn;
+          align-self: center;
+          margin-top: 0;
+          margin-left: 0;
+          margin-right: 0; }
+          .section-productos div .div-row-productos .card-contenedor .div-btn-agregar .btn-agregar-carrito {
+            background-color: #0a0a0a;
+            color: #5f9ea0;
+            text-align: center;
+            position: relative;
+            font-family: "Mukta", sans-serif;
+            font-weight: 200;
+            transition: 0.4s;
+            left: 0.5rem;
+            border: none;
+            animation-name: color-anim;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            animation-duration: 3s; }
+  @keyframes color-anim {
+    0% {
+      color: #5f9ea0; }
+    25% {
+      color: #5f9ea0; }
+    50% {
+      color: #F27649; }
+    75% {
+      color: #F27649; }
+    100% {
+      color: #5f9ea0; } }
+        .section-productos div .div-row-productos .card-contenedor .div-ver-mas {
+          grid-area: div-ver-mas;
+          align-self: center;
+          margin-top: 0;
+          margin-left: 0;
+          margin-right: 0; }
+          .section-productos div .div-row-productos .card-contenedor .div-ver-mas .btn-ver-mas {
+            position: relative;
+            left: 2.2rem;
+            font-family: "Mukta", sans-serif;
+            font-weight: 300;
+            color: #d8d8d8;
+            text-decoration: none;
+            text-align: center; } }
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  .section-paginas-productos {
+    width: 100%;
+    position: relative;
+    height: 72rem;
+    margin-top: 10rem;
+    left: 0; }
+    .section-paginas-productos .grid-padre-productos {
+      display: grid;
+      width: 100%;
+      position: relative;
+      height: 70rem;
+      margin-top: 0;
+      left: 0;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 35% 10% 38% 15%;
+      grid-template-areas: "grid-img-productos grid-compra-productos" "grid-img-productos grid-pagos-productos" "grid-descripcion-productos grid-pagos-productos" "grid-descripcion-productos grid-garantia-productos"; }
+      .section-paginas-productos .grid-padre-productos .grid-img-productos {
+        grid-area: grid-img-productos;
+        width: 90%;
+        justify-self: center;
+        align-self: center;
+        border-radius: 0.5rem; }
+      .section-paginas-productos .grid-padre-productos .grid-compra-productos {
+        grid-area: grid-compra-productos;
+        border-left: 1px solid #444444;
+        width: 100%;
+        height: 100%; }
+        .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-compra-titulo {
+          position: relative;
+          width: 90%;
+          height: 5rem;
+          left: 5%;
+          border-bottom: 1px solid #444444; }
+          .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-compra-titulo .h2-titulo-producto {
+            font-family: "Mukta", sans-serif;
+            position: relative;
+            top: 0.5rem;
+            font-weight: 200;
+            font-size: 1.7rem;
+            color: #d8d8d8; }
+        .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-envio-compra {
+          position: relative;
+          width: 90%;
+          height: 5rem;
+          left: 5%;
+          border-bottom: 1px solid #444444; }
+          .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-envio-compra .envio-compra {
+            font-family: "Mukta", sans-serif;
+            position: relative;
+            top: 2rem;
+            font-weight: 300;
+            font-size: 1rem;
+            color: #5f9ea0; }
+          .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-envio-compra .modal-envio-compra {
+            position: relative;
+            top: 2rem;
+            color: #b3b3b3;
+            font-size: 1rem;
+            font-family: "Mukta", sans-serif;
+            background-color: #0a0a0a;
+            font-weight: 200;
+            border: none; }
+            .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-envio-compra .modal-envio-compra:hover {
+              text-decoration: underline 1px; }
+          .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-envio-compra div div .modal-codigo-postal {
+            position: relative;
+            left: 2rem;
+            height: 9rem; }
+            .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-envio-compra div div .modal-codigo-postal .input-codigo {
+              width: 25rem;
+              height: 2rem;
+              font-size: 1.2rem;
+              border-radius: 0.4rem;
+              font-weight: 300;
+              font-family: "Mukta", sans-serif;
+              text-align: start;
+              opacity: 0.5;
+              transition: 1s; }
+              .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-envio-compra div div .modal-codigo-postal .input-codigo:focus {
+                opacity: 1; }
+        .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-precio-compra {
+          position: relative;
+          width: 90%;
+          height: 11rem;
+          left: 5%;
+          border-bottom: 1px solid #444444; }
+          .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-precio-compra .precio-compra {
+            font-family: "Mukta", sans-serif;
+            position: relative;
+            top: 1.8rem;
+            font-weight: 200;
+            font-size: 2rem;
+            color: #d8d8d8; }
+          .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-precio-compra .p-cuotas-compra {
+            font-family: "Mukta", sans-serif;
+            position: relative;
+            top: 2.5rem;
+            font-weight: 200;
+            font-size: 1.1rem;
+            color: #b3b3b3; }
+            .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-precio-compra .p-cuotas-compra .strong-cuotas {
+              font-family: "Mukta", sans-serif;
+              position: relative;
+              top: 0;
+              font-weight: 300;
+              font-size: 1.1rem;
+              color: #F27649; }
+          .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-precio-compra .medios-pago-compra {
+            position: relative;
+            top: 3rem;
+            color: #b3b3b3;
+            font-size: 1rem;
+            font-family: "Mukta", sans-serif;
+            background-color: #0a0a0a;
+            font-weight: 200;
+            border: none; }
+            .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-precio-compra .medios-pago-compra:hover {
+              text-decoration: underline 1px; }
+      .section-paginas-productos .grid-padre-productos .grid-pagos-productos {
+        grid-area: grid-pagos-productos;
+        border-left: 1px solid #444444;
+        width: 100%;
+        height: 100%; }
+        .section-paginas-productos .grid-padre-productos .grid-pagos-productos .div-medios-pagos {
+          position: relative;
+          width: 90%;
+          height: 100%;
+          left: 5%;
+          border-bottom: 1px solid #444444; }
+          .section-paginas-productos .grid-padre-productos .grid-pagos-productos .div-medios-pagos .h3-medios-pagos {
+            font-family: "Mukta", sans-serif;
+            position: relative;
+            top: 1rem;
+            font-weight: 200;
+            font-size: 1.5rem;
+            color: #d8d8d8; }
+          .section-paginas-productos .grid-padre-productos .grid-pagos-productos .div-medios-pagos .h4-pagos {
+            font-family: "Mukta", sans-serif;
+            position: relative;
+            top: 0;
+            font-weight: 200;
+            font-size: 1.2rem;
+            color: #b3b3b3; }
+          .section-paginas-productos .grid-padre-productos .grid-pagos-productos .div-medios-pagos .medio-credito {
+            position: relative;
+            top: 1.5rem; }
+          .section-paginas-productos .grid-padre-productos .grid-pagos-productos .div-medios-pagos .medio-debito {
+            position: relative;
+            top: 3.5rem; }
+          .section-paginas-productos .grid-padre-productos .grid-pagos-productos .div-medios-pagos .medio-efectivo {
+            position: relative;
+            top: 4.5rem; }
+          .section-paginas-productos .grid-padre-productos .grid-pagos-productos .div-medios-pagos .img-medios-pagos-credito {
+            position: relative;
+            top: 2rem;
+            width: 18rem; }
+          .section-paginas-productos .grid-padre-productos .grid-pagos-productos .div-medios-pagos .img-medios-pagos-debito {
+            position: relative;
+            top: 3.5rem;
+            width: 18rem; }
+          .section-paginas-productos .grid-padre-productos .grid-pagos-productos .div-medios-pagos .img-medios-pagos-efectivo {
+            position: relative;
+            top: 5rem;
+            width: 12rem; }
+          .section-paginas-productos .grid-padre-productos .grid-pagos-productos .div-medios-pagos .medios-pago-compra {
+            position: relative;
+            top: 5.5rem;
+            color: #b3b3b3;
+            font-size: 1rem;
+            font-family: "Mukta", sans-serif;
+            background-color: #0a0a0a;
+            font-weight: 200;
+            border: none;
+            left: 1.5rem; }
+            .section-paginas-productos .grid-padre-productos .grid-pagos-productos .div-medios-pagos .medios-pago-compra:hover {
+              text-decoration: underline 1px; }
+      .section-paginas-productos .grid-padre-productos .grid-garantia-productos {
+        grid-area: grid-garantia-productos;
+        border-left: 1px solid #444444;
+        width: 100%;
+        height: 100%; }
+        .section-paginas-productos .grid-padre-productos .grid-garantia-productos .div-garantia {
+          position: relative;
+          width: 90%;
+          height: 100%;
+          left: 5%;
+          top: 1rem; }
+          .section-paginas-productos .grid-padre-productos .grid-garantia-productos .div-garantia .h3-garantia {
+            font-family: "Mukta", sans-serif;
+            position: relative;
+            top: 0;
+            font-weight: 200;
+            font-size: 1.5rem;
+            color: #d8d8d8; }
+          .section-paginas-productos .grid-padre-productos .grid-garantia-productos .div-garantia .div-compra-protegida {
+            display: flex;
+            position: relative;
+            width: 95%;
+            top: 1rem; }
+            .section-paginas-productos .grid-padre-productos .grid-garantia-productos .div-garantia .div-compra-protegida .icon-compra-protegida {
+              width: 2.4rem;
+              height: 2.4rem; }
+            .section-paginas-productos .grid-padre-productos .grid-garantia-productos .div-garantia .div-compra-protegida .p-compra-protegida {
+              font-family: "Mukta", sans-serif;
+              position: relative;
+              top: 0;
+              font-weight: 200;
+              font-size: 1rem;
+              color: #b3b3b3;
+              left: 1rem; }
+      .section-paginas-productos .grid-padre-productos .grid-descripcion-productos {
+        grid-area: grid-descripcion-productos;
+        width: 100%;
+        height: 100%; }
+        .section-paginas-productos .grid-padre-productos .grid-descripcion-productos .div-descripcion {
+          position: relative;
+          width: 90%;
+          height: 20%;
+          left: 5%;
+          border-top: 1px solid #444444;
+          border-bottom: 1px solid #444444; }
+          .section-paginas-productos .grid-padre-productos .grid-descripcion-productos .div-descripcion .h3-titulo-descripcion {
+            font-family: "Mukta", sans-serif;
+            position: relative;
+            top: 2.5rem;
+            font-weight: 200;
+            font-size: 1.5rem;
+            color: #d8d8d8;
+            text-align: center; }
+        .section-paginas-productos .grid-padre-productos .grid-descripcion-productos .div-p-descripcion {
+          position: relative;
+          width: 90%;
+          height: 80%;
+          left: 5%; }
+          .section-paginas-productos .grid-padre-productos .grid-descripcion-productos .div-p-descripcion .p-descripcion {
+            font-family: "Mukta", sans-serif;
+            position: relative;
+            top: 3rem;
+            font-weight: 200;
+            font-size: 1.1rem;
+            color: #b3b3b3; } }
+
+@media only screen and (min-width: 576px) and (max-width: 991px) and (min-width: 576px) and (max-width: 767px) {
+  .section-paginas-productos {
+    position: relative;
+    height: 130rem;
+    margin-top: 8rem; }
+    .section-paginas-productos .grid-padre-productos {
+      display: grid;
+      position: relative;
+      width: 100%;
+      height: 125rem;
+      grid-template-columns: 100%;
+      grid-template-rows: 21% 19% 21% 8% 27%;
+      grid-template-areas: "grid-img-productos"  "grid-compra-productos" "grid-pagos-productos" "grid-garantia-productos" "grid-descripcion-productos"; }
+      .section-paginas-productos .grid-padre-productos .grid-img-productos {
+        grid-area: grid-img-productos;
+        width: 75%;
+        justify-self: center;
+        align-self: center;
+        border-radius: 0.5rem; }
+      .section-paginas-productos .grid-padre-productos .grid-compra-productos {
+        grid-area: grid-compra-productos;
+        border-left: 1px solid #444444;
+        border-right: 1px solid #444444;
+        width: 100%;
+        height: 100%; }
+        .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-compra-titulo {
+          top: 1rem; }
+        .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-precio-compra .div-botones-compra {
+          display: flex;
+          position: relative;
+          top: 6.5rem;
+          flex-direction: column; }
+          .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-precio-compra .div-botones-compra .boton-agregar-carrito {
+            width: 70%;
+            height: 2.5rem;
+            top: 2rem;
+            left: 15%;
+            border: none;
+            position: relative;
+            opacity: 0.9;
+            border-radius: 0.5rem;
+            background-color: #F27649;
+            transition: 0.5s; }
+            .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-precio-compra .div-botones-compra .boton-agregar-carrito:hover {
+              opacity: 1; }
+      .section-paginas-productos .grid-padre-productos .grid-pagos-productos {
+        border-left: none;
+        grid-area: grid-pagos-productos;
+        width: 100%;
+        height: 100%; }
+        .section-paginas-productos .grid-padre-productos .grid-pagos-productos .div-medios-pagos .img-medios-pagos-debito {
+          top: 3.5rem;
+          width: 20rem; }
+      .section-paginas-productos .grid-padre-productos .grid-garantia-productos {
+        border-left: none;
+        grid-area: grid-garantia-productos;
+        width: 100%;
+        height: 100%; }
+        .section-paginas-productos .grid-padre-productos .grid-garantia-productos .div-garantia {
+          position: relative;
+          width: 90%;
+          height: 100%;
+          left: 5%; }
+          .section-paginas-productos .grid-padre-productos .grid-garantia-productos .div-garantia .h3-garantia {
+            font-family: "Mukta", sans-serif;
+            position: relative;
+            top: 1rem;
+            font-weight: 200;
+            font-size: 1.5rem;
+            color: #d8d8d8; }
+          .section-paginas-productos .grid-padre-productos .grid-garantia-productos .div-garantia .div-compra-protegida {
+            top: 2.5rem; }
+            .section-paginas-productos .grid-padre-productos .grid-garantia-productos .div-garantia .div-compra-protegida .p-compra-protegida {
+              font-family: "Mukta", sans-serif;
+              position: relative;
+              top: 0.7rem;
+              font-weight: 200;
+              font-size: 1rem;
+              color: #b3b3b3; }
+      .section-paginas-productos .grid-padre-productos .grid-descripcion-productos {
+        border-left: none; }
+        .section-paginas-productos .grid-padre-productos .grid-descripcion-productos .div-descripcion {
+          position: relative;
+          width: 90%;
+          height: 20%;
+          left: 5%;
+          border-top: 1px solid #444444;
+          border-bottom: 1px solid #444444; }
+          .section-paginas-productos .grid-padre-productos .grid-descripcion-productos .div-descripcion .h3-titulo-descripcion {
+            font-family: "Mukta", sans-serif;
+            position: relative;
+            top: 1.7rem;
+            font-weight: 200;
+            font-size: 1.5rem;
+            color: #d8d8d8;
+            text-align: center; } }
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  .section-nosotros {
+    height: 107rem;
+    display: flex;
+    justify-content: center; }
+    .section-nosotros .div-contenedor-nosotros {
+      width: 100%;
+      position: relative;
+      height: 95rem;
+      top: 8rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center; }
+      .section-nosotros .div-contenedor-nosotros div .titulo-nosotros {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        font-family: "Mukta", sans-serif;
+        text-align: center;
+        font-weight: 300;
+        color: #d8d8d8; }
+      .section-nosotros .div-contenedor-nosotros div .p-texto-nosotros {
+        width: 100%;
+        font-weight: 200;
+        font-size: 1.1rem;
+        color: #b3b3b3;
+        font-family: "Mukta", sans-serif; }
+      .section-nosotros .div-contenedor-nosotros div .img-nosotros {
+        border-radius: 0.5rem;
+        width: 100%; }
+  .section-ayuda {
+    left: 1%;
+    position: relative;
+    height: 45rem; }
+    .section-ayuda .titulo-ayuda {
+      font-family: "Mukta", sans-serif;
+      text-align: center;
+      color: #d8d8d8;
+      text-align: center;
+      position: relative;
+      top: 8rem;
+      font-size: 1.6rem;
+      font-weight: 300; }
+    .section-ayuda .subtitulo-ayuda {
+      font-family: "Mukta", sans-serif;
+      text-align: center;
+      color: #d8d8d8;
+      text-align: center;
+      position: relative;
+      top: 10rem;
+      font-size: 1rem;
+      font-weight: 300; }
+    .section-ayuda .div-pasos-ayuda {
+      position: relative;
+      top: 10rem;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 33.3% 33.3% 33.3%;
+      grid-template-rows: 64% 36%;
+      grid-template-areas: "img-paso1 img-paso2 img-paso3" "div-texto-paso1 div-texto-paso2 div-texto-paso3";
+      height: 28rem; }
+      .section-ayuda .div-pasos-ayuda .img-paso1 {
+        width: 10rem;
+        grid-area: img-paso1;
+        opacity: 0.5;
+        justify-self: center;
+        top: 0;
+        align-self: center;
+        position: relative; }
+      .section-ayuda .div-pasos-ayuda .img-paso2 {
+        width: 10.5rem;
+        grid-area: img-paso2;
+        opacity: 0.5;
+        justify-self: center;
+        top: 0;
+        align-self: center;
+        position: relative; }
+      .section-ayuda .div-pasos-ayuda .img-paso3 {
+        width: 11rem;
+        grid-area: img-paso3;
+        opacity: 0.5;
+        justify-self: center;
+        top: 1rem;
+        align-self: center;
+        position: relative; }
+      .section-ayuda .div-pasos-ayuda .div-texto-paso1 {
+        grid-area: div-texto-paso1;
+        width: 100%; }
+        .section-ayuda .div-pasos-ayuda .div-texto-paso1 .p-paso1 {
+          font-family: "Mukta", sans-serif;
+          top: 1rem;
+          font-weight: 200;
+          text-align: center;
+          color: #9b9b9b;
+          width: 75%;
+          position: relative;
+          left: 10%; }
+      .section-ayuda .div-pasos-ayuda .div-texto-paso2 {
+        grid-area: div-texto-paso2;
+        border-left: 1px solid #F27649;
+        border-right: 1px solid #F27649;
+        width: 100%; }
+        .section-ayuda .div-pasos-ayuda .div-texto-paso2 .p-paso2 {
+          font-family: "Mukta", sans-serif;
+          top: 1rem;
+          font-weight: 200;
+          text-align: center;
+          color: #9b9b9b;
+          width: 80%;
+          position: relative;
+          left: 10%; }
+      .section-ayuda .div-pasos-ayuda .div-texto-paso3 {
+        grid-area: div-texto-paso3;
+        width: 100%; }
+        .section-ayuda .div-pasos-ayuda .div-texto-paso3 .p-paso3 {
+          font-family: "Mukta", sans-serif;
+          top: 1rem;
+          font-weight: 200;
+          text-align: center;
+          color: #9b9b9b;
+          width: 80%;
+          position: relative;
+          left: 10%; }
+  .section-preguntas-frecuentes {
+    position: relative;
+    height: 36rem; }
+    .section-preguntas-frecuentes .titulo-preguntas-frecuentes {
+      font-family: "Mukta", sans-serif;
+      text-align: center;
+      color: #d8d8d8;
+      text-align: center;
+      position: relative;
+      top: 3rem;
+      font-size: 1.6rem;
+      font-weight: 300; }
+    .section-preguntas-frecuentes .div-preguntas1 {
+      width: 90%;
+      height: 9%;
+      border-bottom: #5f9ea0 1px solid;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      position: relative;
+      top: 9rem;
+      left: 5%;
+      overflow: hidden;
+      transition: 1s ease; }
+      .section-preguntas-frecuentes .div-preguntas1:hover {
+        width: 90%;
+        position: relative;
+        left: 5%;
+        height: 26%;
+        border-bottom: #F27649 1px solid;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem; }
+      .section-preguntas-frecuentes .div-preguntas1 .p-preguntas {
+        color: #d8d8d8;
+        font-family: "Mukta", sans-serif;
+        font-weight: 300;
+        font-size: 1.1rem;
+        text-align: center; }
+      .section-preguntas-frecuentes .div-preguntas1 .p-respuestas {
+        color: #969696;
+        font-family: "Mukta", sans-serif;
+        font-weight: 200;
+        margin-top: 1.5rem;
+        font-size: 1rem;
+        text-align: center; }
+    .section-preguntas-frecuentes .div-preguntas2 {
+      width: 90%;
+      height: 9%;
+      border-bottom: #5f9ea0 1px solid;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      position: relative;
+      top: 12rem;
+      left: 5%;
+      overflow: hidden;
+      transition: 1s ease; }
+      .section-preguntas-frecuentes .div-preguntas2:hover {
+        width: 90%;
+        position: relative;
+        left: 5%;
+        height: 26%;
+        border-bottom: #F27649 1px solid;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem; }
+      .section-preguntas-frecuentes .div-preguntas2 .p-preguntas {
+        color: #d8d8d8;
+        font-family: "Mukta", sans-serif;
+        font-weight: 300;
+        font-size: 1.1rem;
+        text-align: center; }
+      .section-preguntas-frecuentes .div-preguntas2 .p-respuestas {
+        color: #969696;
+        font-family: "Mukta", sans-serif;
+        font-weight: 200;
+        margin-top: 1.5rem;
+        font-size: 1rem;
+        text-align: center; }
+    .section-preguntas-frecuentes .div-preguntas3 {
+      width: 90%;
+      height: 9%;
+      border-bottom: #5f9ea0 1px solid;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      position: relative;
+      top: 15rem;
+      left: 5%;
+      overflow: hidden;
+      transition: 1s ease; }
+      .section-preguntas-frecuentes .div-preguntas3:hover {
+        width: 90%;
+        position: relative;
+        left: 5%;
+        height: 26%;
+        border-bottom: #F27649 1px solid;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem; }
+      .section-preguntas-frecuentes .div-preguntas3 .p-preguntas {
+        color: #d8d8d8;
+        font-family: "Mukta", sans-serif;
+        font-weight: 300;
+        font-size: 1.1rem;
+        text-align: center; }
+      .section-preguntas-frecuentes .div-preguntas3 .p-respuestas {
+        color: #969696;
+        font-family: "Mukta", sans-serif;
+        font-weight: 200;
+        margin-top: 1.5rem;
+        font-size: 1rem;
+        text-align: center; }
+  .footer__contenedor-padre {
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: 23% 18% 18% 18% 23%;
+    grid-template-rows: 8rem 6rem;
+    grid-template-areas: "footer__div-footer1 footer__div-instagram footer__div-facebook footer__div-whatsapp footer__div-footer2" "footer__div-correo footer__div-correo footer__div-telefono footer__div-copyright footer__div-copyright"; }
+    .footer__contenedor-padre .footer__div-footer1 {
+      grid-area: footer__div-footer1; }
+    .footer__contenedor-padre .footer__instagram {
+      grid: footer__div-instagram;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 0.5rem;
+      justify-self: center;
+      transition: 1s ease;
+      align-self: center;
+      border-radius: 50%; }
+      .footer__contenedor-padre .footer__instagram .footer__icon-instagram--size {
+        width: 1.1rem;
+        margin-left: 0.9rem;
+        margin-top: 0.9rem;
+        opacity: 0.8; }
+    .footer__contenedor-padre .footer__facebook {
+      grid: footer__div-facebook;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 0.5rem;
+      justify-self: center;
+      transition: 1s ease;
+      align-self: center;
+      border-radius: 50%; }
+      .footer__contenedor-padre .footer__facebook .footer__icon-facebook--size {
+        width: 1.1rem;
+        margin-left: 0.85rem;
+        margin-top: 0.9rem;
+        opacity: 0.8; }
+    .footer__contenedor-padre .footer__whatsapp {
+      grid: footer__div-whatsapp;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 0.5rem;
+      justify-self: center;
+      transition: 1s ease;
+      align-self: center;
+      border-radius: 50%; }
+      .footer__contenedor-padre .footer__whatsapp .footer__icon-whatsapp--size {
+        width: 1.2rem;
+        margin-left: 0.85rem;
+        margin-top: 0.85rem;
+        opacity: 0.8; }
+    .footer__contenedor-padre .redes-animacion {
+      border: #5f9ea0 1px solid;
+      animation-name: border-anim;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in;
+      animation-duration: 5s; }
+  @keyframes border-anim {
+    0% {
+      border: #5f9ea0 1px solid; }
+    25% {
+      border: #5f9ea0 1px solid; }
+    50% {
+      border: #F27649 1px solid; }
+    75% {
+      border: #F27649 1px solid; }
+    100% {
+      border: #5f9ea0 1px solid; } }
+    .footer__contenedor-padre .footer__correo {
+      grid-area: footer__div-correo;
+      justify-self: end; }
+      .footer__contenedor-padre .footer__correo .footer__correo--texto {
+        color: #8b8b8b;
+        text-align: center;
+        font-family: "Mukta", sans-serif;
+        font-weight: 300;
+        position: relative;
+        font-size: 1rem;
+        top: 0.8rem;
+        right: 1rem; }
+    .footer__contenedor-padre .footer__telefono {
+      grid-area: footer__div-telefono; }
+      .footer__contenedor-padre .footer__telefono .footer__telefono--texto {
+        color: #8b8b8b;
+        text-align: center;
+        font-family: "Mukta", sans-serif;
+        font-weight: 300;
+        position: relative;
+        font-size: 1rem;
+        top: 0.8rem; }
+    .footer__contenedor-padre .telefono-bordes {
+      text-align: center;
+      border-left: #5f9ea0 1px solid;
+      border-right: #5f9ea0 1px solid;
+      width: 100%;
+      height: 50%; }
+    .footer__contenedor-padre .telefono-animacion {
+      border-left: #5f9ea0 1px solid;
+      border-right: #5f9ea0 1px solid;
+      animation-name: bordes-animaciones;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in;
+      animation-duration: 5s; }
+  @keyframes bordes-animaciones {
+    0% {
+      border-right: #5f9ea0 1px solid;
+      border-left: #5f9ea0 1px solid; }
+    25% {
+      border-right: #5f9ea0 1px solid;
+      border-left: #5f9ea0 1px solid; }
+    50% {
+      border-right: #F27649 1px solid;
+      border-left: #F27649 1px solid; }
+    75% {
+      border-right: #F27649 1px solid;
+      border-left: #F27649 1px solid; }
+    100% {
+      border-right: #5f9ea0 1px solid;
+      border-left: #5f9ea0 1px solid; } }
+    .footer__contenedor-padre .footer__copyright {
+      grid-area: footer__div-copyright; }
+      .footer__contenedor-padre .footer__copyright .footer__copyright--texto {
+        color: #8b8b8b;
+        text-align: start;
+        font-family: "Mukta", sans-serif;
+        font-weight: 300;
+        position: relative;
+        font-size: 1rem;
+        top: 0.8rem;
+        margin-left: 1rem; }
+    .footer__contenedor-padre .footer__div-footer2 {
+      grid-area: footer__div-footer2; } }
+
+@media only screen and (min-width: 992px) {
+  .mobile {
+    display: none; }
+  .desktop .container-header {
+    background-color: #000000;
+    height: 7rem;
+    z-index: 1; }
+    .desktop .container-header .logo-header {
+      width: 16rem;
+      position: relative;
+      left: 0;
+      top: 1.9rem; }
+    .desktop .container-header .icon-usuario-desktop {
+      position: relative;
+      position: fixed;
+      z-index: 1;
+      color: white;
+      width: 1.7rem;
+      top: 2.55rem;
+      left: 89%;
+      transition: 0.4s; }
+      .desktop .container-header .icon-usuario-desktop:hover {
+        color: #F27649; }
+  .carrito-icon-desktop {
+    position: relative;
+    left: 93.5vw;
+    position: fixed;
+    top: 0.2rem;
+    z-index: 1; }
+    .carrito-icon-desktop .p-texto-carrito {
+      position: relative;
+      top: 0.7rem;
+      visibility: hidden;
+      width: 1.9rem;
+      left: 0.8rem;
+      color: #ffffff; }
+    .carrito-icon-desktop .icon-carrito {
+      z-index: 1;
+      width: 2rem;
+      top: 2.5rem;
+      left: 1%;
+      opacity: 1;
+      color: white;
+      visibility: hidden;
+      transition: 0.4s;
+      position: absolute; }
+      .carrito-icon-desktop .icon-carrito:hover {
+        color: #F27649; }
+  .desktop nav .div-nav {
+    background-color: #000000;
+    position: relative;
+    position: fixed;
+    overflow: hidden;
+    width: 4.5rem;
+    height: 100%;
+    top: 7rem;
+    z-index: 1;
+    transition: ease 1s; }
+    .desktop nav .div-nav:hover {
+      width: 16rem;
+      z-index: 1; }
+  .desktop nav .animacion-nav {
+    border-right: #5f9ea0 1px solid;
+    animation-name: animNav;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 5s; }
+  @keyframes animNav {
+    0% {
+      border-right: #5f9ea0 1px solid; }
+    25% {
+      border-right: #5f9ea0 1px solid; }
+    50% {
+      border-right: #F27649 1px solid; }
+    75% {
+      border-right: #F27649 1px solid; }
+    100% {
+      border-right: #5f9ea0 1px solid; } }
+  .desktop nav div .ul-nav {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: end;
+    list-style: none;
+    margin-left: 4rem; }
+    .desktop nav div .ul-nav .li-nav {
+      font-size: 1.3rem;
+      margin-top: 3rem; }
+      .desktop nav div .ul-nav .li-nav .li-a-active {
+        color: #ffffff;
+        font-family: "Mukta", sans-serif;
+        font-weight: 300;
+        text-decoration: none;
+        opacity: 1; }
+      .desktop nav div .ul-nav .li-nav .li-a-nav {
+        color: #ffffff;
+        font-family: "Mukta", sans-serif;
+        font-weight: 300;
+        text-decoration: none;
+        opacity: 0.5; }
+        .desktop nav div .ul-nav .li-nav .li-a-nav:hover {
+          opacity: 0.7; }
+      .desktop nav div .ul-nav .li-nav .img-menu {
+        position: fixed;
+        position: absolute;
+        left: 1.3rem;
+        width: 1.7rem; }
+  .div-carrito-mobile {
+    display: none; }
+  .section-logo-index {
+    position: relative;
+    top: 7rem; }
+    .section-logo-index div div .logo {
+      position: relative;
+      width: 67%;
+      top: 1rem;
+      left: 19%; }
+  .section-publicidad {
+    margin-top: 13rem;
+    height: 32rem; }
+    .section-publicidad .row-publicidad-index {
+      display: grid;
+      margin-left: 5%;
+      grid-template-columns: 33.34% 33.34% 33.34%;
+      grid-template-rows: 26rem 6rem;
+      grid-template-areas: "div-carrousel-1 div-carrousel-2 div-carrousel-3" "div-publicidad div-publicidad div-publicidad"; }
+      .section-publicidad .row-publicidad-index .div-carrousel-1 {
+        grid-area: div-carrousel-1;
+        align-self: center; }
+        .section-publicidad .row-publicidad-index .div-carrousel-1 .size-carrousel-1 {
+          width: 75%;
+          opacity: 0.8;
+          margin-left: 3.4vw;
+          transition: 1s ease; }
+          .section-publicidad .row-publicidad-index .div-carrousel-1 .size-carrousel-1:hover {
+            transform: translateY(-3px) scale(1.05);
+            opacity: 1; }
+          .section-publicidad .row-publicidad-index .div-carrousel-1 .size-carrousel-1 .border-carrousel-1 {
+            border-radius: 1rem; }
+      .section-publicidad .row-publicidad-index .div-carrousel-2 {
+        grid-area: div-carrousel-2;
+        border-left: 1px solid #5f9ea0;
+        border-right: 1px solid #5f9ea0;
+        align-self: center; }
+        .section-publicidad .row-publicidad-index .div-carrousel-2 .size-carrousel-2 {
+          width: 75%;
+          opacity: 0.8;
+          margin-left: 3.4vw;
+          transition: 1s ease; }
+          .section-publicidad .row-publicidad-index .div-carrousel-2 .size-carrousel-2:hover {
+            transform: translateY(-3px) scale(1.05);
+            opacity: 1; }
+          .section-publicidad .row-publicidad-index .div-carrousel-2 .size-carrousel-2 .border-carrousel-2 {
+            border-radius: 1rem; }
+      .section-publicidad .row-publicidad-index .animacion-carrousel2-publicidad {
+        border-left: #5f9ea0 1px solid;
+        border-right: #5f9ea0 1px solid;
+        animation-name: bordes-animaciones;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 5s; }
+  @keyframes bordes-animaciones {
+    0% {
+      border-right: #5f9ea0 1px solid;
+      border-left: #5f9ea0 1px solid; }
+    25% {
+      border-right: #5f9ea0 1px solid;
+      border-left: #5f9ea0 1px solid; }
+    50% {
+      border-right: #F27649 1px solid;
+      border-left: #F27649 1px solid; }
+    75% {
+      border-right: #F27649 1px solid;
+      border-left: #F27649 1px solid; }
+    100% {
+      border-right: #5f9ea0 1px solid;
+      border-left: #5f9ea0 1px solid; } }
+      .section-publicidad .row-publicidad-index .div-carrousel-3 {
+        grid-area: div-carrousel-3;
+        align-self: center; }
+        .section-publicidad .row-publicidad-index .div-carrousel-3 .size-carrousel-3 {
+          width: 75%;
+          margin-left: 3.4vw;
+          opacity: 0.8;
+          transition: 1s ease; }
+          .section-publicidad .row-publicidad-index .div-carrousel-3 .size-carrousel-3:hover {
+            transform: translateY(-3px) scale(1.05);
+            opacity: 1; }
+          .section-publicidad .row-publicidad-index .div-carrousel-3 .size-carrousel-3 .border-carrousel-3 {
+            border-radius: 1rem; }
+      .section-publicidad .row-publicidad-index .div-publicidad {
+        grid-area: div-publicidad;
+        text-align: center; }
+        .section-publicidad .row-publicidad-index .div-publicidad a {
+          text-decoration: none; }
+          .section-publicidad .row-publicidad-index .div-publicidad a .div-a-publicidad {
+            position: relative;
+            font-weight: 300;
+            color: #d8d8d8;
+            top: 1rem;
+            font-family: "Mukta", sans-serif;
+            font-size: 1.2rem; }
+            .section-publicidad .row-publicidad-index .div-publicidad a .div-a-publicidad:hover {
+              text-decoration: underline 1px; } }
+
+@media only screen and (min-width: 992px) and (min-width: 992px) and (max-width: 1399px) {
+  .section-publicidad {
+    margin-top: 11rem;
+    height: 26rem; }
+    .section-publicidad .row-publicidad-index {
+      grid-template-rows: 19rem 5rem; } }
+
+@media only screen and (min-width: 992px) and (min-width: 1700px) {
+  .section-publicidad .row-publicidad-index .div-carrousel-1 .size-carrousel-1 {
+    margin-left: 3.4rem; }
+  .section-publicidad .row-publicidad-index .div-carrousel-2 .size-carrousel-2 {
+    margin-left: 3.4rem; }
+  .section-publicidad .row-publicidad-index .div-carrousel-3 .size-carrousel-3 {
+    margin-left: 3.4rem; } }
+
+@media only screen and (min-width: 992px) {
+  .section-productos {
+    position: relative;
+    left: 3.5%;
+    margin-top: 10rem;
+    margin-bottom: 4rem; }
+    .section-productos .titulo-productos {
+      position: relative;
+      width: 97.3%;
+      height: 3.5rem;
+      left: 0;
+      font-weight: 300;
+      font-size: 2.3rem;
+      text-align: center;
+      font-family: "Mukta", sans-serif;
+      color: #d8d8d8;
+      border-bottom: 1px solid #444444; }
+    .section-productos div .div-row-productos {
+      height: 93rem; }
+      .section-productos div .div-row-productos .card-contenedor {
+        display: grid;
+        width: 17rem;
+        text-decoration: none;
+        border-radius: 0.4rem;
+        height: 27rem;
+        background-color: #0a0a0a;
+        border: 1px solid #F27649;
+        transition: 0.5s ease-in;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 63% 11.5% 11.5% 14%;
+        grid-template-areas: "img-card img-card" "precio-card envio-card" "texto-card texto-card" "div-btn div-ver-mas"; }
+        .section-productos div .div-row-productos .card-contenedor:hover {
+          box-shadow: 2px 2px 20px #3a3a3a; }
+        .section-productos div .div-row-productos .card-contenedor .img-card {
+          grid-area: img-card;
+          width: 100%;
+          border-top-left-radius: 0.4rem;
+          border-top-right-radius: 0.4rem; }
+        .section-productos div .div-row-productos .card-contenedor .precio-card {
+          color: #d8d8d8;
+          font-family: "Mukta", sans-serif;
+          font-weight: 300;
+          font-size: 1.3rem;
+          grid-area: precio-card;
+          align-self: center;
+          margin-top: 0.5rem;
+          margin-left: 1rem;
+          margin-right: 0; }
+        .section-productos div .div-row-productos .card-contenedor .envio-card {
+          color: #d8d8d8;
+          font-family: "Mukta", sans-serif;
+          font-weight: 300;
+          font-size: 0.8rem;
+          grid-area: envio-card;
+          align-self: center;
+          margin-top: 0.5rem;
+          margin-left: 0;
+          margin-right: 1rem;
+          justify-self: end;
+          color: #60d6b3; }
+        .section-productos div .div-row-productos .card-contenedor .texto-card {
+          color: #d8d8d8;
+          font-family: "Mukta", sans-serif;
+          font-weight: 200;
+          font-size: 1.1rem;
+          grid-area: texto-card;
+          align-self: center;
+          margin-top: 0;
+          margin-left: 1rem;
+          margin-right: 0; }
+        .section-productos div .div-row-productos .card-contenedor .div-btn-agregar {
+          grid-area: div-btn;
+          align-self: center;
+          margin-top: 0;
+          margin-left: 0;
+          margin-right: 0; }
+          .section-productos div .div-row-productos .card-contenedor .div-btn-agregar .btn-agregar-carrito {
+            background-color: #0a0a0a;
+            color: #ffffff;
+            text-align: center;
+            position: relative;
+            font-family: "Mukta", sans-serif;
+            font-weight: 200;
+            transition: 0.4s;
+            left: 1rem;
+            border: none; }
+            .section-productos div .div-row-productos .card-contenedor .div-btn-agregar .btn-agregar-carrito:hover {
+              color: #F27649;
+              text-decoration: underline 1px solid #dd6b41; }
+        .section-productos div .div-row-productos .card-contenedor .div-ver-mas {
+          grid-area: div-ver-mas;
+          align-self: center;
+          margin-top: 0;
+          margin-left: 0;
+          margin-right: 0; }
+          .section-productos div .div-row-productos .card-contenedor .div-ver-mas .btn-ver-mas {
+            position: relative;
+            left: 3.5rem;
+            font-family: "Mukta", sans-serif;
+            font-weight: 300;
+            color: #5f9ea0;
+            text-decoration: none;
+            text-align: center; }
+            .section-productos div .div-row-productos .card-contenedor .div-ver-mas .btn-ver-mas:hover {
+              text-decoration: underline 1px solid #5f9ea0; } }
+
+@media only screen and (min-width: 992px) and (min-width: 1200px) and (max-width: 1399px) {
+  .section-productos {
+    position: relative;
+    left: 0;
+    margin-top: 11rem;
+    margin-bottom: 4rem; }
+    .section-productos .titulo-productos {
+      position: relative;
+      width: 86%;
+      height: 3.5rem;
+      left: 8.8%;
+      font-weight: 300;
+      font-size: 2.1rem;
+      text-align: center;
+      font-family: "Mukta", sans-serif;
+      color: #d8d8d8;
+      border-bottom: 1px solid #444444; }
+    .section-productos div .div-row-productos {
+      position: relative;
+      left: 5%;
+      height: 120rem;
+      width: 95%; } }
+
+@media only screen and (min-width: 992px) and (min-width: 992px) and (max-width: 1199px) {
+  .section-productos {
+    position: relative;
+    left: 0;
+    margin-top: 11rem;
+    margin-bottom: 4rem; }
+    .section-productos .titulo-productos {
+      position: relative;
+      width: 90%;
+      height: 3.5rem;
+      left: 9%;
+      font-weight: 300;
+      font-size: 2.1rem;
+      text-align: center;
+      font-family: "Mukta", sans-serif;
+      color: #d8d8d8;
+      border-bottom: 1px solid #444444; }
+    .section-productos div .div-row-productos {
+      position: relative;
+      left: 5%;
+      height: 120rem;
+      width: 95%; } }
+
+@media only screen and (min-width: 992px) {
+  .section-paginas-productos {
+    width: 100%;
+    position: relative;
+    height: 75rem;
+    margin-top: 11rem;
+    left: 2%; }
+    .section-paginas-productos .grid-padre-productos {
+      display: grid;
+      width: 90%;
+      position: relative;
+      height: 70rem;
+      margin-top: 0;
+      left: 5%;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 35% 10% 30% 26%;
+      grid-template-areas: "grid-img-productos grid-compra-productos" "grid-img-productos grid-pagos-productos" "grid-descripcion-productos grid-pagos-productos" "grid-descripcion-productos grid-garantia-productos"; }
+      .section-paginas-productos .grid-padre-productos .grid-img-productos {
+        grid-area: grid-img-productos;
+        width: 75%;
+        justify-self: center;
+        align-self: center;
+        border-radius: 0.5rem; }
+      .section-paginas-productos .grid-padre-productos .grid-compra-productos {
+        grid-area: grid-compra-productos;
+        border-left: 1px solid #444444;
+        width: 100%;
+        height: 100%; }
+        .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-compra-titulo {
+          position: relative;
+          width: 75%;
+          height: 5rem;
+          left: 10%;
+          border-bottom: 1px solid #444444; }
+          .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-compra-titulo .h2-titulo-producto {
+            font-family: "Mukta", sans-serif;
+            position: relative;
+            top: 0.5rem;
+            font-weight: 200;
+            font-size: 1.7rem;
+            color: #d8d8d8; }
+        .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-envio-compra {
+          position: relative;
+          width: 75%;
+          height: 5.5rem;
+          left: 10%;
+          border-bottom: 1px solid #444444; }
+          .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-envio-compra .envio-compra {
+            font-family: "Mukta", sans-serif;
+            position: relative;
+            top: 2rem;
+            font-weight: 300;
+            font-size: 1rem;
+            color: #5f9ea0; }
+          .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-envio-compra .modal-envio-compra {
+            position: relative;
+            top: 2rem;
+            color: #b3b3b3;
+            font-size: 1rem;
+            font-family: "Mukta", sans-serif;
+            background-color: #0a0a0a;
+            font-weight: 200;
+            border: none; }
+            .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-envio-compra .modal-envio-compra:hover {
+              text-decoration: underline 1px; }
+          .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-envio-compra div div .modal-codigo-postal {
+            position: relative;
+            left: 2rem;
+            height: 9rem; }
+            .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-envio-compra div div .modal-codigo-postal .input-codigo {
+              width: 25rem;
+              height: 2rem;
+              font-size: 1.2rem;
+              border-radius: 0.4rem;
+              font-weight: 300;
+              font-family: "Mukta", sans-serif;
+              text-align: start;
+              opacity: 0.5;
+              transition: 1s; }
+              .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-envio-compra div div .modal-codigo-postal .input-codigo:focus {
+                opacity: 1; }
+        .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-precio-compra {
+          position: relative;
+          width: 75%;
+          height: 5;
+          left: 10%; }
+          .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-precio-compra .precio-compra {
+            font-family: "Mukta", sans-serif;
+            position: relative;
+            top: 1.8rem;
+            font-weight: 200;
+            font-size: 2rem;
+            color: #d8d8d8; }
+          .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-precio-compra .p-cuotas-compra {
+            font-family: "Mukta", sans-serif;
+            position: relative;
+            top: 2.5rem;
+            font-weight: 200;
+            font-size: 1.1rem;
+            color: #b3b3b3; }
+            .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-precio-compra .p-cuotas-compra .strong-cuotas {
+              font-family: "Mukta", sans-serif;
+              position: relative;
+              top: 0;
+              font-weight: 300;
+              font-size: 1.1rem;
+              color: #F27649; }
+          .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-precio-compra .medios-pago-compra {
+            position: relative;
+            top: 3rem;
+            color: #b3b3b3;
+            font-size: 1rem;
+            font-family: "Mukta", sans-serif;
+            background-color: #0a0a0a;
+            font-weight: 200;
+            border: none; }
+            .section-paginas-productos .grid-padre-productos .grid-compra-productos .div-precio-compra .medios-pago-compra:hover {
+              text-decoration: underline 1px; }
+      .section-paginas-productos .grid-padre-productos .grid-pagos-productos {
+        grid-area: grid-pagos-productos;
+        border-left: 1px solid #444444;
+        width: 100%;
+        height: 100%; }
+        .section-paginas-productos .grid-padre-productos .grid-pagos-productos .div-medios-pagos {
+          position: relative;
+          width: 75%;
+          height: 100%;
+          left: 10%;
+          border-top: 1px solid #444444;
+          border-bottom: 1px solid #444444; }
+          .section-paginas-productos .grid-padre-productos .grid-pagos-productos .div-medios-pagos .h3-medios-pagos {
+            font-family: "Mukta", sans-serif;
+            position: relative;
+            top: 1rem;
+            font-weight: 200;
+            font-size: 1.5rem;
+            color: #d8d8d8; }
+          .section-paginas-productos .grid-padre-productos .grid-pagos-productos .div-medios-pagos .h4-pagos {
+            font-family: "Mukta", sans-serif;
+            position: relative;
+            top: 0;
+            font-weight: 200;
+            font-size: 1.2rem;
+            color: #b3b3b3; }
+          .section-paginas-productos .grid-padre-productos .grid-pagos-productos .div-medios-pagos .medio-credito {
+            position: relative;
+            top: 1.5rem; }
+          .section-paginas-productos .grid-padre-productos .grid-pagos-productos .div-medios-pagos .medio-debito {
+            position: relative;
+            top: 3.5rem; }
+          .section-paginas-productos .grid-padre-productos .grid-pagos-productos .div-medios-pagos .medio-efectivo {
+            position: relative;
+            top: 4.5rem; }
+          .section-paginas-productos .grid-padre-productos .grid-pagos-productos .div-medios-pagos .img-medios-pagos-credito {
+            position: relative;
+            top: 2rem;
+            width: 18rem; }
+          .section-paginas-productos .grid-padre-productos .grid-pagos-productos .div-medios-pagos .img-medios-pagos-debito {
+            position: relative;
+            top: 3.5rem;
+            width: 18rem; }
+          .section-paginas-productos .grid-padre-productos .grid-pagos-productos .div-medios-pagos .img-medios-pagos-efectivo {
+            position: relative;
+            top: 5rem;
+            width: 12rem; }
+          .section-paginas-productos .grid-padre-productos .grid-pagos-productos .div-medios-pagos .medios-pago-compra {
+            position: relative;
+            top: 5.5rem;
+            color: #b3b3b3;
+            font-size: 1rem;
+            font-family: "Mukta", sans-serif;
+            background-color: #0a0a0a;
+            font-weight: 200;
+            border: none;
+            left: 1.5rem; }
+            .section-paginas-productos .grid-padre-productos .grid-pagos-productos .div-medios-pagos .medios-pago-compra:hover {
+              text-decoration: underline 1px; }
+      .section-paginas-productos .grid-padre-productos .grid-garantia-productos {
+        grid-area: grid-garantia-productos;
+        border-left: 1px solid #444444;
+        width: 100%;
+        height: 100%; }
+        .section-paginas-productos .grid-padre-productos .grid-garantia-productos .div-garantia {
+          position: relative;
+          width: 75%;
+          height: 100%;
+          left: 10%;
+          top: 1rem; }
+          .section-paginas-productos .grid-padre-productos .grid-garantia-productos .div-garantia .h3-garantia {
+            font-family: "Mukta", sans-serif;
+            position: relative;
+            top: 0;
+            font-weight: 200;
+            font-size: 1.5rem;
+            color: #b3b3b3; }
+          .section-paginas-productos .grid-padre-productos .grid-garantia-productos .div-garantia .div-compra-protegida {
+            display: flex;
+            position: relative;
+            width: 95%;
+            top: 1rem; }
+            .section-paginas-productos .grid-padre-productos .grid-garantia-productos .div-garantia .div-compra-protegida .icon-compra-protegida {
+              width: 2.4rem;
+              height: 2.4rem; }
+            .section-paginas-productos .grid-padre-productos .grid-garantia-productos .div-garantia .div-compra-protegida .p-compra-protegida {
+              font-family: "Mukta", sans-serif;
+              position: relative;
+              top: 0.7rem;
+              font-weight: 200;
+              font-size: 1rem;
+              color: #b3b3b3;
+              left: 1rem; }
+      .section-paginas-productos .grid-padre-productos .grid-descripcion-productos {
+        grid-area: grid-descripcion-productos;
+        width: 100%;
+        height: 100%; }
+        .section-paginas-productos .grid-padre-productos .grid-descripcion-productos .div-descripcion {
+          position: relative;
+          width: 80%;
+          height: 20%;
+          left: 10%;
+          border-top: 1px solid #444444;
+          border-bottom: 1px solid #444444; }
+          .section-paginas-productos .grid-padre-productos .grid-descripcion-productos .div-descripcion .h3-titulo-descripcion {
+            font-family: "Mukta", sans-serif;
+            position: relative;
+            top: 2.5rem;
+            font-weight: 200;
+            font-size: 1.5rem;
+            color: #d8d8d8;
+            text-align: center; }
+        .section-paginas-productos .grid-padre-productos .grid-descripcion-productos .div-p-descripcion {
+          position: relative;
+          width: 80%;
+          height: 80%;
+          left: 10%; }
+          .section-paginas-productos .grid-padre-productos .grid-descripcion-productos .div-p-descripcion .p-descripcion {
+            font-family: "Mukta", sans-serif;
+            position: relative;
+            top: 3rem;
+            font-weight: 200;
+            font-size: 1.1rem;
+            color: #b3b3b3; }
+  .section-nosotros {
+    position: relative;
+    left: 2%;
+    height: 85rem; }
+    .section-nosotros .div-contenedor-nosotros {
+      width: 85%;
+      left: 7.5%;
+      position: relative;
+      height: 70rem;
+      top: 11rem;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 7% 10% 10% 26% 10% 10% 27%;
+      grid-template-areas: "div-titulo-nosotros div-titulo-nosotros" "parrafo-nosotros-1 parrafo-nosotros-1" "parrafo-nosotros-2 parrafo-nosotros-2" "img-nosotros-1 img-nosotros-2" "parrafo-nosotros-3 parrafo-nosotros-3" "parrafo-nosotros-4 parrafo-nosotros-4" "img-nosotros-3 img-nosotros-3"; }
+      .section-nosotros .div-contenedor-nosotros .div-titulo-nosotros {
+        grid-area: div-titulo-nosotros; }
+      .section-nosotros .div-contenedor-nosotros .parrafo-nosotros-1 {
+        grid-area: parrafo-nosotros-1; }
+      .section-nosotros .div-contenedor-nosotros .parrafo-nosotros-2 {
+        grid-area: parrafo-nosotros-2; }
+      .section-nosotros .div-contenedor-nosotros .parrafo-nosotros-3 {
+        grid-area: parrafo-nosotros-3; }
+      .section-nosotros .div-contenedor-nosotros .parrafo-nosotros-4 {
+        grid-area: parrafo-nosotros-4; }
+      .section-nosotros .div-contenedor-nosotros .img-nosotros-1 {
+        grid-area: img-nosotros-1; }
+        .section-nosotros .div-contenedor-nosotros .img-nosotros-1 .img-nosotros {
+          width: 90%;
+          position: relative;
+          left: 5%;
+          border-radius: 0.5rem; }
+      .section-nosotros .div-contenedor-nosotros .img-nosotros-2 {
+        grid-area: img-nosotros-2; }
+        .section-nosotros .div-contenedor-nosotros .img-nosotros-2 .img-nosotros {
+          width: 90%;
+          position: relative;
+          left: 5%;
+          border-radius: 0.5rem; }
+      .section-nosotros .div-contenedor-nosotros .img-nosotros-3 {
+        grid-area: img-nosotros-3;
+        align-self: center;
+        justify-self: center; }
+        .section-nosotros .div-contenedor-nosotros .img-nosotros-3 .img-nosotros {
+          border-radius: 0.5rem; }
+      .section-nosotros .div-contenedor-nosotros div .titulo-nosotros {
+        font-size: 1.8rem;
+        font-family: "Mukta", sans-serif;
+        text-align: center;
+        font-weight: 300;
+        color: #d8d8d8; }
+      .section-nosotros .div-contenedor-nosotros div .p-texto-nosotros {
+        position: relative;
+        left: 5%;
+        width: 90%;
+        font-weight: 200;
+        font-size: 1.15rem;
+        color: #b3b3b3;
+        font-family: "Mukta", sans-serif; } }
+
+@media only screen and (min-width: 992px) and (min-width: 992px) and (max-width: 1199px) {
+  .section-nosotros {
+    height: 82rem; }
+    .section-nosotros .div-contenedor-nosotros {
+      height: 65rem;
+      grid-template-rows: 7% 9% 11.5% 21.5% 11.5% 11.5% 28%; } }
+
+@media only screen and (min-width: 992px) and (min-width: 1200px) and (max-width: 1399px) {
+  .section-nosotros .div-contenedor-nosotros {
+    grid-template-rows: 7% 10% 12% 23% 10% 10% 28%; } }
+
+@media only screen and (min-width: 992px) {
+  .section-ayuda {
+    position: relative;
+    left: 3%;
+    height: 52rem; }
+    .section-ayuda .titulo-ayuda {
+      font-family: "Mukta", sans-serif;
+      text-align: center;
+      font-weight: 300;
+      color: #d8d8d8;
+      position: relative;
+      top: 11rem;
+      text-align: center;
+      font-size: 1.7rem; }
+    .section-ayuda .subtitulo-ayuda {
+      font-family: "Mukta", sans-serif;
+      text-align: center;
+      color: #d8d8d8;
+      text-align: center;
+      position: relative;
+      top: 14rem;
+      font-size: 1.1rem;
+      font-weight: 200; }
+    .section-ayuda .div-pasos-ayuda {
+      position: relative;
+      top: 13rem;
+      height: 28rem;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 33.3% 33.3% 33.3%;
+      grid-template-rows: 77% 23%;
+      grid-template-areas: "img-paso1 img-paso2 img-paso3" "div-texto-paso1 div-texto-paso2 div-texto-paso3"; }
+      .section-ayuda .div-pasos-ayuda .img-paso1 {
+        width: 10rem;
+        grid-area: img-paso1;
+        opacity: 0.5;
+        justify-self: center;
+        top: 0;
+        align-self: center;
+        position: relative; }
+      .section-ayuda .div-pasos-ayuda .img-paso2 {
+        width: 10.5rem;
+        grid-area: img-paso2;
+        opacity: 0.5;
+        justify-self: center;
+        top: 0;
+        align-self: center;
+        position: relative; }
+      .section-ayuda .div-pasos-ayuda .img-paso3 {
+        width: 11rem;
+        grid-area: img-paso3;
+        opacity: 0.5;
+        justify-self: center;
+        top: 1rem;
+        align-self: center;
+        position: relative; }
+      .section-ayuda .div-pasos-ayuda .div-texto-paso1 {
+        grid-area: div-texto-paso1;
+        width: 100%; }
+        .section-ayuda .div-pasos-ayuda .div-texto-paso1 .p-paso1 {
+          font-family: "Mukta", sans-serif;
+          top: 1rem;
+          font-weight: 200;
+          text-align: center;
+          color: #9b9b9b;
+          width: 75%;
+          position: relative;
+          left: 10%; }
+      .section-ayuda .div-pasos-ayuda .div-texto-paso2 {
+        grid-area: div-texto-paso2;
+        border-left: 1px solid #F27649;
+        border-right: 1px solid #F27649;
+        width: 100%; }
+        .section-ayuda .div-pasos-ayuda .div-texto-paso2 .p-paso2 {
+          font-family: "Mukta", sans-serif;
+          top: 1rem;
+          font-weight: 200;
+          text-align: center;
+          color: #9b9b9b;
+          width: 80%;
+          position: relative;
+          left: 10%; }
+      .section-ayuda .div-pasos-ayuda .div-texto-paso3 {
+        grid-area: div-texto-paso3;
+        width: 100%; }
+        .section-ayuda .div-pasos-ayuda .div-texto-paso3 .p-paso3 {
+          font-family: "Mukta", sans-serif;
+          top: 1rem;
+          font-weight: 200;
+          text-align: center;
+          color: #9b9b9b;
+          width: 80%;
+          position: relative;
+          left: 10%; }
+  .section-preguntas-frecuentes {
+    position: relative;
+    left: 2.5%;
+    height: 36rem; }
+    .section-preguntas-frecuentes .titulo-preguntas-frecuentes {
+      font-family: "Mukta", sans-serif;
+      text-align: center;
+      color: #d8d8d8;
+      text-align: center;
+      position: relative;
+      top: 4rem;
+      font-size: 1.7rem;
+      font-weight: 300; }
+    .section-preguntas-frecuentes .div-preguntas1 {
+      width: 60%;
+      height: 8%;
+      border-bottom: #5f9ea0 1px solid;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      position: relative;
+      top: 9rem;
+      left: 20%;
+      overflow: hidden;
+      transition: 1s ease; }
+      .section-preguntas-frecuentes .div-preguntas1:hover {
+        width: 60%;
+        position: relative;
+        left: 20%;
+        height: 20%;
+        border-bottom: #F27649 1px solid;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem; }
+      .section-preguntas-frecuentes .div-preguntas1 .p-preguntas {
+        color: #d8d8d8;
+        font-family: "Mukta", sans-serif;
+        font-weight: 300;
+        font-size: 1.1rem;
+        text-align: center; }
+      .section-preguntas-frecuentes .div-preguntas1 .p-respuestas {
+        color: #969696;
+        font-family: "Mukta", sans-serif;
+        font-weight: 200;
+        margin-top: 1rem;
+        font-size: 1rem;
+        text-align: center; }
+    .section-preguntas-frecuentes .div-preguntas2 {
+      width: 60%;
+      height: 8%;
+      border-bottom: #5f9ea0 1px solid;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      position: relative;
+      top: 12rem;
+      left: 20%;
+      overflow: hidden;
+      transition: 1s ease; }
+      .section-preguntas-frecuentes .div-preguntas2:hover {
+        width: 60%;
+        position: relative;
+        left: 20%;
+        height: 20%;
+        border-bottom: #F27649 1px solid;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem; }
+      .section-preguntas-frecuentes .div-preguntas2 .p-preguntas {
+        color: #d8d8d8;
+        font-family: "Mukta", sans-serif;
+        font-weight: 300;
+        font-size: 1.1rem;
+        text-align: center; }
+      .section-preguntas-frecuentes .div-preguntas2 .p-respuestas {
+        color: #969696;
+        font-family: "Mukta", sans-serif;
+        font-weight: 200;
+        margin-top: 1rem;
+        font-size: 1rem;
+        text-align: center; }
+    .section-preguntas-frecuentes .div-preguntas3 {
+      width: 60%;
+      height: 8%;
+      border-bottom: #5f9ea0 1px solid;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      position: relative;
+      top: 15rem;
+      left: 20%;
+      overflow: hidden;
+      transition: 1s ease; }
+      .section-preguntas-frecuentes .div-preguntas3:hover {
+        width: 60%;
+        position: relative;
+        left: 20%;
+        height: 20%;
+        border-bottom: #F27649 1px solid;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem; }
+      .section-preguntas-frecuentes .div-preguntas3 .p-preguntas {
+        color: #d8d8d8;
+        font-family: "Mukta", sans-serif;
+        font-weight: 300;
+        font-size: 1.1rem;
+        text-align: center; }
+      .section-preguntas-frecuentes .div-preguntas3 .p-respuestas {
+        color: #969696;
+        font-family: "Mukta", sans-serif;
+        font-weight: 200;
+        margin-top: 1rem;
+        font-size: 1rem;
+        text-align: center; }
+  .footer__contenedor-padre {
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: 29.4% 15% 15% 15% 25.5%;
+    grid-template-rows: 11rem 7rem;
+    grid-template-areas: "footer__div-footer1 footer__div-instagram footer__div-facebook footer__div-whatsapp footer__div-footer2" "footer__div-correo footer__div-correo footer__div-telefono footer__div-copyright footer__div-copyright"; }
+    .footer__contenedor-padre .footer__div-footer1 {
+      grid-area: footer__div-footer1; }
+    .footer__contenedor-padre .footer__instagram {
+      grid: footer__div-instagram;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 0.5rem;
+      justify-self: center;
+      transition: 1s ease;
+      align-self: center; }
+      .footer__contenedor-padre .footer__instagram:hover {
+        background-color: #e4405f;
+        transform: translateY(-3px) scale(1.08); }
+      .footer__contenedor-padre .footer__instagram .footer__icon-instagram--size {
+        width: 1.1rem;
+        margin-left: 0.9rem;
+        margin-top: 0.9rem;
+        opacity: 0.8; }
+    .footer__contenedor-padre .footer__facebook {
+      grid: footer__div-facebook;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 0.5rem;
+      justify-self: center;
+      transition: 1s ease;
+      align-self: center; }
+      .footer__contenedor-padre .footer__facebook:hover {
+        background-color: #3b5999;
+        transform: translateY(-3px) scale(1.08); }
+      .footer__contenedor-padre .footer__facebook .footer__icon-facebook--size {
+        width: 1.1rem;
+        margin-left: 0.95rem;
+        margin-top: 0.9rem;
+        opacity: 0.8; }
+    .footer__contenedor-padre .footer__whatsapp {
+      grid: footer__div-whatsapp;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 0.5rem;
+      justify-self: center;
+      transition: 1s ease;
+      align-self: center; }
+      .footer__contenedor-padre .footer__whatsapp:hover {
+        background-color: #356b35;
+        transform: translateY(-3px) scale(1.08); }
+      .footer__contenedor-padre .footer__whatsapp .footer__icon-whatsapp--size {
+        width: 1.2rem;
+        margin-left: 0.85rem;
+        margin-top: 0.8rem;
+        opacity: 0.8; }
+    .footer__contenedor-padre .redes-animacion {
+      border: #5f9ea0 1px solid;
+      animation-name: border-anim;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in;
+      animation-duration: 5s; }
+  @keyframes border-anim {
+    0% {
+      border: #5f9ea0 1px solid; }
+    25% {
+      border: #5f9ea0 1px solid; }
+    50% {
+      border: #F27649 1px solid; }
+    75% {
+      border: #F27649 1px solid; }
+    100% {
+      border: #5f9ea0 1px solid; } }
+    .footer__contenedor-padre .footer__correo {
+      grid-area: footer__div-correo;
+      justify-self: end; }
+      .footer__contenedor-padre .footer__correo .footer__correo--texto {
+        color: #8b8b8b;
+        text-align: center;
+        font-family: "Mukta", sans-serif;
+        font-weight: 300;
+        position: relative;
+        font-size: 1.1rem;
+        top: 1rem;
+        right: 2rem; }
+    .footer__contenedor-padre .footer__telefono {
+      grid-area: footer__div-telefono; }
+      .footer__contenedor-padre .footer__telefono .footer__telefono--texto {
+        color: #8b8b8b;
+        text-align: center;
+        font-family: "Mukta", sans-serif;
+        font-weight: 300;
+        position: relative;
+        font-size: 1.1rem;
+        top: 1rem; }
+    .footer__contenedor-padre .telefono-bordes {
+      text-align: center;
+      border-left: #5f9ea0 1px solid;
+      border-right: #5f9ea0 1px solid;
+      width: 100%;
+      height: 50%; }
+    .footer__contenedor-padre .telefono-animacion {
+      border-left: #5f9ea0 1px solid;
+      border-right: #5f9ea0 1px solid;
+      animation-name: bordes-animaciones;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in;
+      animation-duration: 5s; }
+  @keyframes bordes-animaciones {
+    0% {
+      border-right: #5f9ea0 1px solid;
+      border-left: #5f9ea0 1px solid; }
+    25% {
+      border-right: #5f9ea0 1px solid;
+      border-left: #5f9ea0 1px solid; }
+    50% {
+      border-right: #F27649 1px solid;
+      border-left: #F27649 1px solid; }
+    75% {
+      border-right: #F27649 1px solid;
+      border-left: #F27649 1px solid; }
+    100% {
+      border-right: #5f9ea0 1px solid;
+      border-left: #5f9ea0 1px solid; } }
+    .footer__contenedor-padre .footer__copyright {
+      grid-area: footer__div-copyright; }
+      .footer__contenedor-padre .footer__copyright .footer__copyright--texto {
+        color: #8b8b8b;
+        text-align: start;
+        font-family: "Mukta", sans-serif;
+        font-weight: 300;
+        position: relative;
+        font-size: 1.1rem;
+        top: 1rem;
+        margin-left: 2rem; }
+    .footer__contenedor-padre .footer__div-footer2 {
+      grid-area: footer__div-footer2; } }

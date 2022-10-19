@@ -1,0 +1,76 @@
+.footer__contenedor-padre{
+    background-color: $bgcolor-header-nav-footer;
+    display: grid;
+    grid-template-columns: 23% 18% 18% 18% 23%;
+    grid-template-rows: 8rem 6rem;
+    grid-template-areas: 
+                        "footer__div-footer1 footer__div-instagram footer__div-facebook footer__div-whatsapp footer__div-footer2"
+                        "footer__div-correo footer__div-correo footer__div-telefono footer__div-copyright footer__div-copyright";
+        
+        .footer__div-footer1{
+            grid-area: footer__div-footer1;
+        }
+        .footer__instagram{
+            @include div-redes(footer__div-instagram,3rem,3rem);
+            border-radius: 50%;
+            .footer__icon-instagram--size{
+                @include div-redes-icon(1.1rem,0.9rem,0.9rem);
+            }
+        }    
+        .footer__facebook{
+            @include div-redes(footer__div-facebook,3rem,3rem);
+            border-radius: 50%;
+            .footer__icon-facebook--size{
+                @include div-redes-icon(1.1rem,0.85rem,0.9rem);
+            }
+        }
+        .footer__whatsapp{
+            @include div-redes(footer__div-whatsapp,3rem,3rem);
+            border-radius: 50%;
+            .footer__icon-whatsapp--size{
+                @include div-redes-icon(1.2rem,0.85rem,0.85rem);
+            }
+        }
+        .redes-animacion{
+            border: $color1-bordes $bordes;
+            @include anim-infinito(border-anim);
+            @include border-animacion($bordes);
+        }
+        .footer__correo{
+            grid-area: footer__div-correo;
+            justify-self: end;
+            .footer__correo--texto{
+                @include texto-footer(0.8rem,1rem,center);
+                right: 1rem;
+            }
+        }
+        .footer__telefono{
+            grid-area: footer__div-telefono;
+            .footer__telefono--texto{
+                @include texto-footer(0.8rem,1rem,center);
+            }
+        }
+        .telefono-bordes{
+            text-align: center;
+            border-left: $color1-bordes 1px solid;
+            border-right: $color1-bordes 1px solid;
+            width: 100%;
+            height: 50%;
+        }
+        .telefono-animacion{
+            border-left: $color1-bordes $bordes;
+            border-right: $color1-bordes $bordes;
+            @include anim-infinito(bordes-animaciones);
+            @include left-right-animacion($bordes,$bordes);
+        }
+        .footer__copyright{
+            grid-area: footer__div-copyright;
+            .footer__copyright--texto{
+                @include texto-footer(0.8rem,1rem,start);
+                margin-left: 1rem;
+            }
+        }
+        .footer__div-footer2{
+            grid-area: footer__div-footer2;
+        }
+}

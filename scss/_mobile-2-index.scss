@@ -1,0 +1,107 @@
+//general//
+
+.section-logo-index{
+    div{
+        div{
+            .logo{
+                position: relative;
+                top: 7rem;
+                width: 100%;
+                left: 1%;
+            }
+        }
+    }
+}
+.section-publicidad{
+    height: 24rem;
+    .animacion-publicidad{
+        border: $color1-bordes $bordes;
+        @include anim-infinito(border-anim);
+        @include border-animacion($bordes);
+    }
+    .row-publicidad-index{
+        @include grid-index(90%,75%,12rem,5%);
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 20% 80%;
+        grid-template-areas:
+                            "div-publicidad div-publicidad div-publicidad div-publicidad"
+                            "div-carrousel-1 div-carrousel-1 div-carrousel-2 div-carrousel-2";
+        
+        .div-publicidad{
+            grid-area: div-publicidad;
+            text-align: center;
+            a{
+                text-decoration: none;
+                .div-a-publicidad{
+                    position: relative;
+                    text-decoration: underline 1px;
+                    color: $color-texto-gris;
+                    top: 1.4rem;
+                    font-weight: 300;
+                    font-family: $font;
+                    font-size: 0.95rem;
+                }
+            }
+        }
+        .div-carrousel-1{
+            margin-top: 1rem;
+            grid-area: div-carrousel-1;
+            .size-carrousel-1{
+                width: 80%;
+                position: relative;
+                left: 13%;
+                .border-carrousel-1{
+                    border-radius: 0.5rem;
+                }
+            }
+        }
+        .div-carrousel-2{
+            margin-top: 1rem;
+            grid-area: div-carrousel-2;
+            .size-carrousel-2{
+                width: 80%;
+                left: 6%;
+                position: relative;
+                .border-carrousel-2{
+                    border-radius: 0.5rem;
+                }
+            }
+        }
+        .div-carrousel-3{
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width:450px){
+    .section-publicidad{
+        height: 17rem;
+        .row-publicidad-index{
+            @include grid-index(84%,80%,10rem,8%);
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: 20% 80%;
+            grid-template-areas:
+                                "div-publicidad div-publicidad div-publicidad div-publicidad"
+                                "div-carrousel-1 div-carrousel-1 div-carrousel-2 div-carrousel-2";
+
+            .div-carrousel-1{
+                margin-top: 1rem;
+                grid-area: div-carrousel-1;
+                .size-carrousel-1{
+                    width: 84%;
+                    position: relative;
+                    left: 8%;
+                }
+            }
+            .div-carrousel-2{
+                margin-top: 1rem;
+                grid-area: div-carrousel-2;
+                .size-carrousel-2{
+                    width: 84%;
+                    left: 4%;
+                    position: relative;
+                }
+            }
+        }   
+    } 
+}

@@ -1,0 +1,46 @@
+@mixin div-texto-pasos($width){
+    font-family: $font;
+    top: 1rem;
+    font-weight: 200;
+    text-align: center;
+    color: $color-texto-gris-ayuda;
+    width: $width;
+    position: relative;
+    left: 10%;
+}
+@mixin div-preguntas($top,$width,$left,$height){
+    width: $width;
+    height: $height;
+    border-bottom: $color1-bordes $bordes;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    position: relative;
+    top: $top;
+    left: $left;
+    overflow: hidden;
+    transition: 1s ease;
+}
+@mixin div-preguntas-hover($width,$left,$height){
+    width: $width;
+    position: relative;
+    left: $left;
+    height: $height;
+    border-bottom: $color2-bordes $bordes;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+@mixin p-preguntas($font-size){
+    color: $color-texto-gris;
+    font-family: $font;
+    font-weight: 300;
+    font-size: $font-size;
+    text-align: center;
+}
+@mixin p-respuestas($font-size,$margin-top){
+    color: $color-preguntas-ayuda;
+    font-family: $font;
+    font-weight: 200;
+    margin-top: $margin-top;
+    font-size: $font-size;
+    text-align: center;
+}

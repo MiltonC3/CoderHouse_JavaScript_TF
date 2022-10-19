@@ -1,0 +1,108 @@
+.section-logo-index{
+    div{
+        div{
+            .logo{
+                position: relative;
+                top: 7rem;
+                width: 88%;
+                left: 7%;
+            }
+        }
+    }
+}
+.section-publicidad{
+    height: 25rem;
+    .animacion-publicidad{
+        border: $color1-bordes $bordes;
+        @include anim-infinito(border-anim);
+        @include border-animacion($bordes);
+    }
+    .row-publicidad-index{
+        display: grid;
+        height: 78%;
+        margin-top: 12rem;
+        border-radius: 0.5rem;
+        grid-template-columns: 33.34% 33.34% 33.34%;
+        grid-template-rows: 5rem 14.5rem;
+        grid-template-areas:
+                            "div-publicidad div-publicidad div-publicidad"
+                            "div-carrousel-1 div-carrousel-2 div-carrousel-3";
+        
+        .div-publicidad{
+            grid-area: div-publicidad;
+            text-align: center;
+            a{
+                text-decoration: none;
+                .div-a-publicidad{
+                    position: relative;
+                    color: $color-texto-gris;
+                    top: 2.3rem;
+                    font-weight: 300;
+                    font-family: $font;
+                    text-decoration: underline 1px;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+        .div-carrousel-1{
+            grid-area: div-carrousel-1;
+            align-self: center;
+            .size-carrousel-1{
+                width: 90%;
+                margin-left: 0.6rem;
+                .border-carrousel-1{
+                    border-radius: 1rem;
+                }
+            }
+        }
+        .div-carrousel-2{
+            grid-area: div-carrousel-2;
+            align-self: center;
+            .size-carrousel-2{
+                width: 90%;
+                margin-left: 0.6rem;
+                .border-carrousel-2{
+                    border-radius: 1rem;
+                }
+            }
+        }
+        .div-carrousel-3{
+            grid-area: div-carrousel-3;
+            align-self: center;
+            .size-carrousel-3{
+                width: 90%;
+                margin-left: 0.6rem;
+                .border-carrousel-3{
+                    border-radius: 1rem;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width:576px) and (max-width:767px){
+    .section-publicidad{
+        height: 22rem;
+        .row-publicidad-index{
+            height: 80%;
+            grid-template-rows: 4.5rem 13rem;
+            .div-carrousel-1{
+                .size-carrousel-1{
+                    width: 95%;
+                    margin-left: 0.3rem;
+                }
+            }
+            .div-carrousel-2{
+                .size-carrousel-2{
+                    width: 95%;
+                    margin-left: 0.3rem;
+                }
+            }
+            .div-carrousel-3{
+                .size-carrousel-3{
+                    width: 95%;
+                    margin-left: 0.3rem;
+                }
+            }
+        }
+    }
+}

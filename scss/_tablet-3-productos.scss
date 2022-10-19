@@ -1,0 +1,176 @@
+@media only screen and (min-width:576px) and (max-width:767px){
+    .section-productos{
+        position: relative;
+        left: 0;
+        margin-top: 8rem;
+        margin-bottom: 3rem;
+        .titulo-productos{
+            @include titulo-productos(99.5%,0,3.5rem,1.9rem,center);
+            border-bottom: $bordes $borde-compra-productos;
+        }
+        div{
+            .div-row-productos{
+                position: relative;
+                left: 1.5rem;
+                height: 156rem;
+                .card-contenedor{
+                    display: grid;
+                    width: 14rem;
+                    text-decoration: none;
+                    border-radius: 0.4rem;
+                    height: 24rem;
+                    background-color: $background-color;
+                    border: $bordes $color2-bordes;
+                    grid-template-columns: 50% 50%;
+                    grid-template-rows: 58% 14% 14% 14%;
+                    grid-template-areas: 
+                                        "img-card img-card"
+                                        "precio-card envio-card"
+                                        "texto-card texto-card"
+                                        "div-btn div-ver-mas";
+                                        
+                    .img-card{
+                        grid-area: img-card;
+                        width: 100%;
+                        border-top-left-radius: 0.4rem;
+                        border-top-right-radius: 0.4rem;
+                    }
+                    .precio-card{
+                        @include precio-texto-cards(1.2rem,300);
+                        @include texto-card(precio-card,0,1rem,0);
+                    }
+                    .envio-card{
+                        @include precio-texto-cards(0.8rem,300);
+                        @include texto-card(envio-card,0,0,0.3rem);
+                        color: $color1-bordes;
+                        justify-self: end;
+                    }
+                    .texto-card{
+                        @include precio-texto-cards(1rem,200);
+                        @include texto-card(texto-card,0.0,0,0);
+                        width: 95%;
+                        position: relative;
+                        left: 2.5%;
+                        text-align: center;
+                    }    
+                    .div-btn-agregar{
+                        @include texto-card(div-btn,0,0,0);
+                        .btn-agregar-carrito{
+                            background-color: $background-color;
+                            color: $color1-bordes;
+                            text-align: center;
+                            position: relative;
+                            font-family: $font;
+                            font-weight: 200;
+                            transition: 0.4s;
+                            left: 0.5rem;
+                            border: none;
+                            @include anim-color(color-anim);
+                            @include color-animacion($color1-bordes,$color2-bordes);
+                        }
+                        
+                    }
+                    .div-ver-mas{
+                        @include texto-card(div-ver-mas,0,0,0);
+                        .btn-ver-mas{
+                            position: relative;
+                            left: 2.2rem;
+                            font-family: $font;
+                            font-weight: 300;
+                            color: $color-texto-gris;
+                            text-decoration: none;
+                            text-align: center;
+                        }
+                    }      
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width:768px) and (max-width:991px){
+    .section-productos{
+        position: relative;
+        left: 0;
+        margin-top: 8rem;
+        margin-bottom: 4rem;
+        .titulo-productos{
+            @include titulo-productos(99%,0,3.5rem,2rem,center);
+            border-bottom: $bordes $borde-compra-productos;
+        }
+        div{
+            .div-row-productos{
+                position: relative;
+                height: 105rem;
+                .card-contenedor{
+                    display: grid;
+                    width: 13.5rem;
+                    text-decoration: none;
+                    border-radius: 0.4rem;
+                    height: 24rem;
+                    background-color: $background-color;
+                    border: $bordes $color2-bordes;
+                    grid-template-columns: 50% 50%;
+                    grid-template-rows: 57% 14% 14% 14%;
+                    grid-template-areas: 
+                    "img-card img-card"
+                    "precio-card envio-card"
+                    "texto-card texto-card"
+                    "div-btn div-ver-mas";
+                    .img-card{
+                        grid-area: img-card;
+                        width: 100%;
+                        border-top-left-radius: 0.4rem;
+                        border-top-right-radius: 0.4rem
+                    }
+                    .precio-card{
+                        @include precio-texto-cards(1.2rem,300);
+                        @include texto-card(precio-card,0.5rem,1rem,0);
+                    }
+                    .envio-card{
+                        @include precio-texto-cards(0.8rem,300);
+                        @include texto-card(envio-card,0.5rem,0,1rem);
+                        color: $color-verde;
+                        justify-self: end;
+                    }
+                    .texto-card{
+                        @include precio-texto-cards(1rem,200);
+                        @include texto-card(texto-card,0,0,0);
+                        text-align: center;
+                        position: relative;
+                        width: 95%;
+                        left: 2.5%;
+                    }  
+                    .div-btn-agregar{
+                        @include texto-card(div-btn,0,0,0);
+                        .btn-agregar-carrito{
+                            background-color: $background-color;
+                            color: $color1-bordes;
+                            text-align: center;
+                            position: relative;
+                            font-family: $font;
+                            font-weight: 200;
+                            transition: 0.4s;
+                            left: 0.5rem;
+                            border: none;
+                            @include anim-color(color-anim);
+                            @include color-animacion($color1-bordes,$color2-bordes);
+                        }
+                        
+                    }
+                    .div-ver-mas{
+                        @include texto-card(div-ver-mas,0,0,0);
+                        .btn-ver-mas{
+                            position: relative;
+                            left: 2.2rem;
+                            font-family: $font;
+                            font-weight: 300;
+                            color: $color-texto-gris;
+                            text-decoration: none;
+                            text-align: center;
+                        }
+                    }          
+                }
+            }
+        }
+    }
+}

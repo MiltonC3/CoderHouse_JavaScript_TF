@@ -1,0 +1,140 @@
+.div-carrito-mobile{
+        display: none;
+}
+.section-logo-index{
+    position: relative;
+    top: 7rem;
+    div{
+        div{
+            .logo{
+                position: relative;
+                width: 67%;
+                top: 1rem;
+                left: 19%;
+            }
+        }
+    }
+}
+
+.section-publicidad{
+    margin-top: 13rem;
+    height: 32rem;
+    .row-publicidad-index{
+        display: grid;
+        margin-left: 5%;
+        grid-template-columns: 33.34% 33.34% 33.34%;
+        grid-template-rows: 26rem 6rem;
+        grid-template-areas:
+                            "div-carrousel-1 div-carrousel-2 div-carrousel-3"
+                            "div-publicidad div-publicidad div-publicidad";
+
+        .div-carrousel-1{
+            grid-area: div-carrousel-1;
+            align-self: center;
+            .size-carrousel-1{
+                width: 75%;
+                opacity: 0.8;
+                margin-left: 3.4vw;
+                transition: 1s ease;
+                &:hover{
+                    transform: translateY(-3px) scale(1.05);
+                    opacity: 1;
+                }
+                .border-carrousel-1{
+                    border-radius: 1rem;
+                }
+                
+            }
+        }
+        .div-carrousel-2{
+            grid-area: div-carrousel-2;
+            border-left: $bordes $color1-bordes;
+            border-right: $bordes $color1-bordes;
+            align-self: center;
+            .size-carrousel-2{
+                width: 75%;
+                opacity: 0.8;
+                margin-left: 3.4vw;
+                transition: 1s ease;
+                &:hover{
+                    transform: translateY(-3px) scale(1.05);
+                    opacity: 1;
+                }
+                .border-carrousel-2{
+                    border-radius: 1rem;
+                }
+            }
+        }
+        .animacion-carrousel2-publicidad{
+            border-left: $color1-bordes $bordes;
+            border-right: $color1-bordes $bordes;
+            @include anim-infinito(bordes-animaciones);
+            @include left-right-animacion($bordes,$bordes);
+        }
+        .div-carrousel-3{
+            grid-area: div-carrousel-3;
+            align-self: center;
+            .size-carrousel-3{
+                width: 75%;
+                margin-left: 3.4vw;
+                opacity: 0.8;
+                transition: 1s ease;
+                &:hover{
+                    transform: translateY(-3px) scale(1.05);
+                    opacity: 1;
+                }
+                .border-carrousel-3{
+                    border-radius: 1rem;
+                }
+            }
+        }
+        .div-publicidad{
+            grid-area: div-publicidad; 
+            text-align: center;
+            a{
+                text-decoration: none;
+                .div-a-publicidad{
+                    position: relative;
+                    font-weight: 300;
+                    color: $color-texto-gris;
+                    top: 1rem;
+                    font-family: $font;
+                    font-size: 1.2rem;
+                    &:hover{
+                        text-decoration: underline 1px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width:992px) and (max-width:1399px){
+    .section-publicidad{
+        margin-top: 11rem;
+        height: 26rem;
+        .row-publicidad-index{
+            grid-template-rows: 19rem 5rem;
+        }
+    }
+}
+@media only screen and (min-width:1700px){
+    .section-publicidad{
+        .row-publicidad-index{
+            .div-carrousel-1{
+                .size-carrousel-1{
+                    margin-left: 3.4rem;
+                }
+            }
+            .div-carrousel-2{
+                .size-carrousel-2{
+                    margin-left: 3.4rem;
+                }
+            }
+            .div-carrousel-3{
+                .size-carrousel-3{
+                    margin-left: 3.4rem;
+                }
+            }
+        }
+    }
+}

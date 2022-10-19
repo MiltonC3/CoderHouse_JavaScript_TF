@@ -1,0 +1,74 @@
+// colores
+
+$background-color:#0a0a0a;
+$bgcolor-header-nav-footer:#000000;
+$bg-opacity-modal:#0000004d;
+$color1-bordes:#5f9ea0;
+$color2-bordes:#F27649;
+$color-verde:#60d6b3;
+$color-rojo:#d63939;
+$color-texto:#ffffff;
+$hover-card-productos:#3a3a3a;
+$borde-compra-productos:#444444;
+$color-texto-gris:#d8d8d8;
+$color-texto-parrafo:#b3b3b3;
+$color-texto-gris-ayuda:#9b9b9b;
+$color-preguntas-ayuda:#969696;
+$bg-instagram:#e4405f;
+$bg-facebook:#3b5999;
+$bg-whatsapp:#356b35;
+$color-texto-footer:#8b8b8b;
+$bordes-gris:#acacac;
+$bordes-gris-oscuro:#525252;
+
+// variables
+
+$bordes: 1px solid;
+$font: 'Mukta', sans-serif;
+
+//animaciones//
+
+@mixin anim-infinito($name-anim){
+    animation-name: $name-anim;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+}
+@mixin anim-color($name-anim){
+    animation-name: $name-anim;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+}
+@mixin color-animacion($color1,$color2){
+    @keyframes color-anim{
+        0%{color: $color1}
+        25%{color: $color1}
+        50%{color: $color2}
+        75%{color: $color2}
+        100%{color: $color1}
+    }
+}
+@mixin border-animacion($border){
+    @keyframes border-anim{
+        0%{border: $color1-bordes $border;}
+        25%{border: $color1-bordes $border;}
+        50%{border: $color2-bordes $border}
+        75%{border: $color2-bordes $border}
+        100%{border: $color1-bordes $border}
+    }
+}
+@mixin left-right-animacion($border-right,$border-left){
+    @keyframes bordes-animaciones{
+        0%{border-right: $color1-bordes $border-right;
+           border-left: $color1-bordes $border-left;}
+        25%{border-right: $color1-bordes $border-right;
+           border-left: $color1-bordes $border-left;}
+        50%{border-right: $color2-bordes $border-right;
+           border-left: $color2-bordes $border-left;}
+        75%{border-right: $color2-bordes $border-right;
+           border-left: $color2-bordes $border-left;}
+        100%{border-right: $color1-bordes $border-right;
+           border-left: $color1-bordes $border-left;}
+    }
+}

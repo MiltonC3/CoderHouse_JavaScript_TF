@@ -1,0 +1,29 @@
+.div-loaded{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    z-index: 1;
+    background-color: $bgcolor-header-nav-footer;
+    transition: 0.5s ease-out;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    .img-width-loading{
+        z-index: 1;
+        position: relative;
+        top: 44vh;
+        width: 17rem;
+        animation-iteration-count: infinite;
+        animation-duration: 1s;
+    }
+    .p-loaded {
+        color: $color-texto;
+        font-family: $font;
+        position: fixed;
+        top: 52vh;
+        font-size: 1.4rem;
+    }
+}

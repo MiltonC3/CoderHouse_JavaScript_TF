@@ -1,0 +1,91 @@
+.mobile{
+    header{
+        .nav{
+            background-color:$bgcolor-header-nav-footer;
+            z-index: 1;
+            div{
+                a{
+                    .logo-header-mobile{
+                        @include logo-header(15rem,1.3rem,1rem);
+                    }
+                }
+                div{
+                    ul{
+                        li{
+                            .icon-usuario{
+                                width: 4rem;
+                            }
+                            .margin-ayuda{
+                                margin-bottom: 2.5rem;
+                            }
+                        }
+                        .menu{
+                            @include menu-mobile(1.3rem,2rem);
+                        }                            
+                        .ayuda{
+                            border-bottom: $bordes-gris $bordes;
+                            
+                        }
+                        .usuario-texto{
+                            @include menu-mobile(1rem,1rem);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.carrito-icon-tablet{
+    position: relative;
+    left: 82vw;
+    position: fixed;
+    top: 0.1rem;
+    z-index: 1;
+    .p-texto-carrito{
+        position: relative;
+        top: 0.5rem;
+        visibility: hidden;
+        z-index: 2;
+        width: 1.9rem;
+        left: 0.8rem;
+        color: $color-texto;
+    }
+    .icon-carrito{
+        @include icon-carrito(2rem,1.9rem,1%,1);
+        position: absolute;
+        color: white;
+        visibility: hidden;
+        transition: 0.4s;
+        &:hover{
+            color: $color2-bordes;
+        }
+    }
+}
+@media only screen and (max-width:767px){
+    .mobile{
+        header{
+            .nav{
+                div{
+                    .div-carrito-mobile{
+                        .p-texto-carrito{
+                            position: absolute;
+                            top: 2rem;
+                            left: 92vw;
+                            font-size: 0.7rem;
+                            color: $color-texto;
+                            font-family: $font;
+                            font-weight: 400;
+                        }
+                        .icon-carrito-mobile{
+                            @include icon-carrito(1.7rem,1.9rem,77vw,0.7);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .carrito-icon-mobile{
+        left: 75vw;
+    }
+}

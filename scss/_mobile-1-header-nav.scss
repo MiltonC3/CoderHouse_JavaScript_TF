@@ -1,0 +1,96 @@
+.mobile{
+    header{
+        .nav{
+            background-color:$bgcolor-header-nav-footer;
+            z-index: 1;
+            div{
+                a{
+                    .logo-header-mobile{
+                        @include logo-header(14rem,1.4rem,1rem);
+                    }
+                }
+                .icon-menu-bordes{
+                    position: relative;
+                    left: 1rem;
+                    width: 2.5rem;
+                    height: 2.35rem;
+                    .icon-menu{
+                        width: 1.5rem;
+                        position: relative;
+                        right: 0.3rem;
+                    }
+                }
+                div{
+                    ul{
+                        li{
+                            .icon-usuario{
+                                width: 4rem;
+                                opacity: 0.7;
+                            }  
+                            .margin-ayuda{
+                                margin-bottom: 2.5rem;
+                            }
+                        }
+                        .menu{
+                            @include menu-mobile(1.15rem,2rem);
+                        }
+                        .ayuda{
+                            border-bottom: $bordes-gris $bordes;
+                        }
+                        .usuario-texto{
+                            @include menu-mobile(0.85rem,1.5rem);
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.carrito-icon-mobile{
+    position: relative;
+    left: 75.5vw;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    .p-texto-carrito{
+        position: relative;
+        top: 0.5rem;
+        visibility: hidden;
+        width: 1.8rem;
+        font-size: 0.8rem;
+        left: 0.8rem;
+        color: $color-texto;
+    }
+    .icon-carrito{
+        @include icon-carrito(1.8rem,1.8rem,1%,1);
+        position: absolute;
+        color: white;
+        visibility: hidden;
+        transition: 0.4s;
+        &:hover{
+            color: $color2-bordes;
+        }
+    }
+}
+
+@media only screen and (max-width:450px){
+    .mobile{
+        header{
+            .nav{
+                div{
+                    a{
+                        .logo-header-mobile{
+                            @include logo-header(13rem,1.4rem,0.5rem);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .carrito-icon-mobile{
+        left: 72vw;
+    }
+}

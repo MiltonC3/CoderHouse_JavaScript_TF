@@ -1,0 +1,60 @@
+@import "1-generales-variables";
+@import "2-generales-mixins";
+@import "3-generales-mixins-productos";
+@import "4-generales-mixins-paginas-productos";
+@import "5-generales-mixins-ayuda";
+@import "7-generales-loading-page";
+@import "8-generales-carrito";
+
+body{
+    background-color: $background-color;
+    overflow: hidden;
+}
+::-webkit-scrollbar {
+    width: 15px;
+    background-color: #050505;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #353535;
+    border: 1px solid #5e5e5e;
+}
+
+@media only screen and(max-width:575px){
+    .desktop{
+        display: none;
+    }
+    @import "mobile-1-header-nav";
+    @import "mobile-2-index";
+    @import "mobile-3-productos";
+    @import "mobile-4-paginas-productos";
+    @import "mobile-5-nosotros";
+    @import "mobile-6-ayuda";
+    @import "mobile-9-footer";
+}
+@media only screen and (min-width:576px) and (max-width:991px){
+    .desktop{
+        display: none;
+    }
+    @import "tablet-1-header-nav";
+    @import "tablet-2-index";
+    @import "tablet-3-productos";
+    @import "tablet-4-paginas-productos";
+    @import "tablet-5-nosotros";
+    @import "tablet-6-ayuda";
+    @import "tablet-9-footer";
+}
+@media only screen and(min-width:992px){
+    .mobile{
+        display: none;
+    }
+    @import "desktop-1-header";
+    @import "desktop-2-nav";
+    @import "desktop-3-index";
+    @import "desktop-4-productos";
+    @import "desktop-5-paginas-productos";
+    @import "desktop-6-nosotros";
+    @import "desktop-7-ayuda";
+    @import "desktop-10-footer";
+    
+}

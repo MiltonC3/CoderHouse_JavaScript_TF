@@ -1,0 +1,43 @@
+.section-nosotros{
+    height: 82rem;
+    display: flex;
+    justify-content: center;
+    .div-contenedor-nosotros{
+        width: 90%;
+        position: relative;
+        height: 73rem;
+        top: 7rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        div{
+            .titulo-nosotros{
+                font-size: 1.5rem;
+                font-family: $font;
+                text-align: center;
+                font-weight: 300;
+                color: $color-texto-gris;
+            }
+        }
+        div{
+            .p-texto-nosotros{
+                position: relative;
+                left: 5%;
+                width: 90%;
+                font-weight: 200;
+                font-size: 1.05rem;
+                color: $color-texto-parrafo;
+                font-family: $font;
+            }
+        }
+        div{
+            .img-nosotros{
+                border-radius: 0.5rem;
+                position: relative;
+                left: 5%;
+                width: 90%;
+            }
+        }
+    }   
+}

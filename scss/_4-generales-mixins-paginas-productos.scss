@@ -1,0 +1,42 @@
+@mixin modal-compra($top,$font-size){
+    position: relative;
+    top: $top;
+    color: $color-texto-parrafo;
+    font-size: $font-size;
+    font-family: $font;
+    background-color: $background-color;
+    font-weight: 200;
+    border: none;
+    &:hover{
+        text-decoration: underline 1px;
+    }
+}
+@mixin input-modal-postal($width,$height,$font-size){
+    width: $width;
+    height: $height;
+    font-size: $font-size;
+    border-radius: 0.4rem;
+    font-weight: 300;
+    font-family: $font;
+    text-align: start;
+    opacity: 0.5;
+    transition: 1s;
+    &:focus{
+        opacity: 1;
+    }
+}
+@mixin boton-compras($width,$height,$top,$left,$bg-boton){
+    width: $width;
+    height: $height;
+    top: $top;
+    left: $left;
+    border: none;
+    position: relative;
+    opacity: 0.9;
+    border-radius: 0.5rem;
+    background-color: $bg-boton;
+    transition: 0.5s;
+    &:hover{
+        opacity: 1;
+    }
+}

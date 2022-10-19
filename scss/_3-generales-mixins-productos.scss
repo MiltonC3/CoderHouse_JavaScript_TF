@@ -1,0 +1,24 @@
+@mixin titulo-productos($width,$left,$height,$font-size,$text-align){
+    position: relative;
+    width: $width;
+    height: $height;
+    left: $left;
+    font-weight: 300;
+    font-size: $font-size;
+    text-align: $text-align;
+    font-family: $font;
+    color: $color-texto-gris;
+}
+@mixin precio-texto-cards($font-size,$font-weight){
+    color: $color-texto-gris;
+    font-family: $font;
+    font-weight: $font-weight;
+    font-size: $font-size;
+}
+@mixin texto-card($area-grid,$margin-top,$margin-left,$margin-right){
+    grid-area: $area-grid;
+    align-self: center;
+    margin-top: $margin-top;
+    margin-left: $margin-left;
+    margin-right: $margin-right;
+}

@@ -1,0 +1,99 @@
+.section-nosotros{
+    position: relative;
+    left: 2%;
+    height: 85rem;
+    .div-contenedor-nosotros{
+        width: 85%;
+        left: 7.5%;
+        position: relative;
+        height: 70rem;
+        top: 11rem;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 7% 10% 10% 26% 10% 10% 27%;
+        grid-template-areas: 
+                           "div-titulo-nosotros div-titulo-nosotros"
+                           "parrafo-nosotros-1 parrafo-nosotros-1"
+                           "parrafo-nosotros-2 parrafo-nosotros-2"
+                           "img-nosotros-1 img-nosotros-2"
+                           "parrafo-nosotros-3 parrafo-nosotros-3"
+                           "parrafo-nosotros-4 parrafo-nosotros-4"
+                           "img-nosotros-3 img-nosotros-3";
+
+        .div-titulo-nosotros{
+            grid-area: div-titulo-nosotros;
+        }
+        .parrafo-nosotros-1{
+            grid-area: parrafo-nosotros-1;
+        }
+        .parrafo-nosotros-2{
+            grid-area: parrafo-nosotros-2;
+        }
+        .parrafo-nosotros-3{
+            grid-area: parrafo-nosotros-3;
+        }
+        .parrafo-nosotros-4{
+            grid-area: parrafo-nosotros-4;
+        }
+        .img-nosotros-1{
+            grid-area: img-nosotros-1;
+            .img-nosotros{
+                width: 90%;
+                position: relative;
+                left: 5%;
+                border-radius: 0.5rem;
+            }
+        }
+        .img-nosotros-2{
+            grid-area: img-nosotros-2;
+            .img-nosotros{
+                width: 90%;
+                position: relative;
+                left: 5%;
+                border-radius: 0.5rem;
+            }
+        }
+        .img-nosotros-3{
+            grid-area: img-nosotros-3;
+            align-self: center;
+            justify-self: center;
+            .img-nosotros{
+                border-radius: 0.5rem;
+            }
+        }
+        div{
+            .titulo-nosotros{
+                font-size: 1.8rem;
+                font-family: $font;
+                text-align: center;
+                font-weight: 300;
+                color: $color-texto-gris;
+            }
+            .p-texto-nosotros{
+                position: relative;
+                left: 5%;
+                width: 90%;
+                font-weight: 200;
+                font-size: 1.15rem;
+                color: $color-texto-parrafo;
+                font-family: $font;
+            }
+        }
+    }
+}
+@media only screen and (min-width:992px) and (max-width:1199px){
+    .section-nosotros{
+        height: 82rem;
+        .div-contenedor-nosotros{
+            height: 65rem;
+            grid-template-rows: 7% 9% 11.5% 21.5% 11.5% 11.5% 28%;
+        }
+    }
+}
+@media only screen and (min-width:1200px) and (max-width:1399px){
+    .section-nosotros{
+        .div-contenedor-nosotros{
+            grid-template-rows: 7% 10% 12% 23% 10% 10% 28%;
+        }
+    }
+}

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mader Art | Inicio</title>
+  <meta name="keywords" content="MADER ART, PRODUCTOS DE MADERA, ESPECIEROS DE COCINA, BOTIQUINES, CARPINTERIA">
+  <meta name="description"
+    content="Mader Art. Conoce nuestros productos con la mejor calidad y precio. Especieros, Botiquines, Sillas, Mesas de Luz para adornar tu dormitorio y mucho más en nuestra tienda oficial.">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="multimedia/iconos/icono pagina.png" type="image/x-icon">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- Css -->
+  <link rel="stylesheet" href="css/estilos.css">
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <!-- Animaciones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+  <!-- Header y Nav mobile -->
+  <div class="mobile">
+    <header>
+      <!-- nav mobile bootstrap -->
+      <nav class="navbar navbar-expand-lg navbar-dark nav p-4 fixed-top">
+        <div class="container-fluid">
+          <!-- nav mobile logo-header -->
+          <a class="navbar-brand" href="#">
+            <img src="multimedia/img/logo header.png" alt="logo header"
+              class="logo-header-mobile animate__animated animate__fadeInDown">
+          </a>
+          <!-- nav mobile boton menu -->
+          <button class="navbar-toggler icon-menu-bordes" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon icon-menu"></span>
+          </button>
+          <!-- ul nav mobile -->
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <!-- nav mobile inicio -->
+              <li class="nav-item menu">
+                <a class="nav-link active seccion-inicio" aria-current="page" href="#">Inicio</a>
+              </li>
+              <!-- nav mobile productos -->
+              <li class="nav-item menu">
+                <a class="nav-link" href="productos.html">Productos</a>
+              </li>
+              <!-- nav mobile nosotros -->
+              <li class="nav-item menu">
+                <a class="nav-link" href="nosotros.html">Sobre Nosotros</a>
+              </li>
+              <!-- nav mobile ayuda -->
+              <li class="nav-item menu ayuda">
+                <a class="nav-link margin-ayuda" href="ayuda.html">Ayuda</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </div>
+  <!-- Header y Nav desktop -->
+  <div class="desktop">
+    <!-- header-->
+    <header class="container-header fixed-top container-fluid">
+      <div class="container-fluid">
+          <a href="#">
+              <img src="multimedia/img/logo header.png" alt="logo header"
+                class="logo-header animate__animated animate__fadeInDown">
+          </a>
+      </div>
+    </header>
+    <!-- nav-->
+    <nav>
+      <div class="div-nav animacion-nav">
+        <!-- ul nav desktop -->
+        <ul class="ul-nav">
+          <!-- nav desktop inicio -->
+          <li class="li-nav">
+            <a class="li-a-active" href="#"><img src="multimedia/iconos/home.png" alt="Inicio"
+                class="img-menu">Inicio</a>
+          </li>
+          <!-- nav desktop productos -->
+          <li class="li-nav">
+            <a class="li-a-nav" href="productos.html"><img src="multimedia/iconos/productos.png" alt="Productos"
+                class="img-menu">Productos</a>
+          </li>
+          <!-- nav desktop nosotros -->
+          <li class="li-nav">
+            <a class="li-a-nav" href="nosotros.html"><img src="multimedia/iconos/nosotros.png" alt="Nosotros"
+                class="img-menu">Nosotros</a>
+          </li>
+          <!-- nav desktop ayuda -->
+          <li class="li-nav">
+            <a class="li-a-nav" href="ayuda.html"><img src="multimedia/iconos/ayuda.png" alt="Ayuda"
+                class="img-menu">Ayuda</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Main -->
+  <main>
+
+    <!-- loading page -->
+    <div class="div-loaded">
+      <img id="img-loaded-animate" class="img-width-loading" src="multimedia/img/logo header.png" alt="">
+      <p class="p-loaded">Cargando...</p>
+    </div>
+
+    <!-- header icon-carrito -->
+    <div class="carrito-icon-desktop carrito-icon-mobile carrito-icon-tablet">
+      <p id="id-p-carrito" class="p-texto-carrito"></p>
+      
+      <span id="abrir-carrito">
+          <a href="#abrir-carrito" class="icon-carrito">
+              <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="shopping-cart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-shopping-cart fa-w-18 fa-3x"><path fill="currentColor" d="M551.991 64H129.28l-8.329-44.423C118.822 8.226 108.911 0 97.362 0H12C5.373 0 0 5.373 0 12v8c0 6.627 5.373 12 12 12h78.72l69.927 372.946C150.305 416.314 144 431.42 144 448c0 35.346 28.654 64 64 64s64-28.654 64-64a63.681 63.681 0 0 0-8.583-32h145.167a63.681 63.681 0 0 0-8.583 32c0 35.346 28.654 64 64 64 35.346 0 64-28.654 64-64 0-17.993-7.435-34.24-19.388-45.868C506.022 391.891 496.76 384 485.328 384H189.28l-12-64h331.381c11.368 0 21.177-7.976 23.496-19.105l43.331-208C578.592 77.991 567.215 64 551.991 64zM240 448c0 17.645-14.355 32-32 32s-32-14.355-32-32 14.355-32 32-32 32 14.355 32 32zm224 32c-17.645 0-32-14.355-32-32s14.355-32 32-32 32 14.355 32 32-14.355 32-32 32zm38.156-192H171.28l-36-192h406.876l-40 192z" class=""></path></svg>
+          </a>
+      </span>
+    </div>
+
+    <!-- modal carrito -->
+    <div class="div-modal-carrito">
+      <div class="div-carrito">
+          <h4 class="h4-carrito">Carrito</h4>
+          <h6 id="id-p-añadiste" class="h6-carrito">No añadiste nada al carrito</h6>
+          <!-- cards carrito -->
+          <div id="contenedor-carrito" class="card-carrito">
+          </div>
+          <div class="div-p-total">
+              <p id="p-total-carrito" class="p-total-carrito">TOTAL: $0</p>
+          </div>
+          <button id="btn-finalizar-compra" class="btn-comprar-carrito">Finalizar Compra</button>
+          <div class="div-btn-carrito">
+              <button id="vaciar-carrito" class="btn-vaciar-carrito">Vaciar</button>
+              <button id="cerrar-carrito" class="btn-cerrar-carrito">Cerrar</button>
+          </div>
+      </div>
+    </div>
+
+    <!-- seccion Inicio -->
+    <section class="container-fluid section-logo-index">
+      <!-- logo-index -->
+      <div class="row">
+        <div class="col-12">
+          <img src="multimedia/img/LOGO.png" alt="LOGO" class="logo">
+        </div>
+      </div>
+    </section>
+    <!-- Publicidad -->
+    <section class="container section-publicidad">
+      <div class="row-publicidad-index animacion-publicidad">
+        <!-- texto-publicidad -->
+        <div class="div-publicidad">
+          <a href="productos.html">
+            <h6 class="div-a-publicidad">Descubre nuestros productos</h6>
+          </a>
+        </div>
+        <!-- carrousel 1 -->
+        <div class="div-carrousel-1">
+          <div id="carouselExampleSlidesOnly" class="carousel slide size-carrousel-1" data-bs-ride="carousel">
+            <div class="carousel-inner border-carrousel-1">
+              <div class="carousel-item active">
+                <a href="productos/botiquin-blanco-nogal.html">
+                  <img src="multimedia/img/tienda/Botiquin Color Semilaqueado Blanco Nogal.png" class="d-block w-100"
+                    alt="Botiquín Color Semilaqueado Blanco Nogal" title="Botiquín Color Semilaqueado Blanco / Nogal">
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a href="productos/botiquin-luz-cedro.html">
+                  <img src="multimedia/img/tienda/Botiquin Con Luz Color Semilaqueado Blanco Cedro.png" class="d-block w-100"
+                    alt="Botiquín Con Luz Color Semilaqueado Blanco / Cedro"
+                    title="Botiquín Con Luz Color Semilaqueado Blanco / Cedro">
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a href="productos/botiquin-roble.html">
+                  <img src="multimedia/img/tienda/Botiquin Color Roble Claro.png" class="d-block w-100"
+                    alt="Botiquin Color Roble Claro" title="Botiquin Color Roble Claro">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- carrousel 2 -->
+        <div class="div-carrousel-2 animacion-carrousel2-publicidad">
+          <div id="carouselExampleSlidesOnly" class="carousel slide size-carrousel-2" data-bs-ride="carousel">
+            <div class="carousel-inner border-carrousel-2">
+              <div class="carousel-item active">
+                <a href="productos/especiero-grande.html">
+                  <img src="multimedia/img/tienda/Especiero Grande Color Roble Oscuro.png" class="d-block w-100"
+                    alt="Especiero Grande Color Roble Oscuro" title="Especiero Grande Cocina Color Roble Oscuro">
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a href="productos/especiero-mediano-blanco.html">
+                  <img src="multimedia/img/tienda/Especiero Mediano Laqueado Color Blanco.png" class="d-block w-100"
+                    alt="Especiero Mediano Cocina Color Laqueado Blanco"
+                    title="Especiero Mediano Cocina Color Laqueado Blanco">
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a href="">
+                  <img src="multimedia/img/tienda/Especiero Mediano Color Cedro.png" class="d-block w-100"
+                    alt="Especiero Mediano Color Cedro" title="Especiero Mediano Color Cedro">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- carrousel 3 -->
+        <div class="div-carrousel-3">
+          <div id="carouselExampleSlidesOnly" class="carousel slide size-carrousel-3" data-bs-ride="carousel">
+            <div class="carousel-inner border-carrousel-3">
+              <div class="carousel-item active">
+                <a href="productos/mesa-luz-roble.html">
+                  <img src="multimedia/img/tienda/Mesa de Luz Flotante Color Roble Claro.png" class="d-block w-100"
+                    alt="Mesa de Luz Flotante Color Roble Claro" title="Mesa de Luz Flotante Color Roble Claro">
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a href="productos/mesa-luz-madera.html">
+                  <img src="multimedia/img/tienda/Mesa de Luz Flotante Color Madera.png" class="d-block w-100"
+                    alt="Mesa de Luz Flotante Color Madera" title="Mesa de Luz Flotante Color Madera">
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a href="productos/mesa-luz-cedro.html">
+                  <img src="multimedia/img/tienda/Mesa de Luz Flotante Color Cedro.png" class="d-block w-100"
+                    alt="Mesa de Luz Flotante Color Cedro" title="Mesa de Luz Flotante Color Cedro">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer__contenedor-padre">
+    <!-- footer div 1 -->
+    <div class="footer__div-footer1"></div>
+    <!-- footer redes -->
+    <a class="footer__instagram redes-animacion" target="blank" href="https://www.instagram.com/enzoo__99?r=nametag">
+      <div>
+        <img src="multimedia/iconos/instagram.png" alt="instagram" class="footer__icon-instagram--size">
+      </div>
+    </a>
+    <a class="footer__facebook redes-animacion" target="blank" href="https://www.facebook.com/enzo.coria.99">
+      <div>
+        <img src="multimedia/iconos/facebook.png" alt="facebook" class="footer__icon-facebook--size">
+      </div>
+    </a>
+    <a class="footer__whatsapp redes-animacion" target="blank" href="https://wa.me/message/PLNHMS6RG5YKC1">
+      <div>
+        <img src="multimedia/iconos/whatsapp.png" alt="whatsapp" class="footer__icon-whatsapp--size">
+      </div>
+    </a>
+    <!-- footer correo -->
+    <div class="footer__correo">
+      <p class="footer__correo--texto correo-animacion">tiendamaderart@gmail.com</p>
+    </div>
+    <!-- footer telefono -->
+    <div class="footer__telefono telefono-bordes telefono-animacion">
+      <p class="footer__telefono--texto">3856-436584</p>
+    </div>
+    <!-- footer copyright -->
+    <div class="footer__copyright">
+      <p class="footer__copyright--texto">© 2021 MaderArt Argentina</p>
+    </div>
+    <!-- footer div 2 -->
+    <div class="footer__div-footer2"></div>
+  </footer>
+
+  <!-- JS Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <!-- Javascript -->
+  <script src="js/animation-loading.js"></script>
+  <script src="js/stock-productos.js"></script>
+  <script src="js/cards-carrito.js"></script>
+  <script src="js/algoritmo.js"></script>
+  <script src="js/local-storage-carrito.js"></script>
+</body>
+
+</html>

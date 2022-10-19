@@ -1,0 +1,60 @@
+.desktop{
+    nav{
+        .div-nav{
+            background-color:$bgcolor-header-nav-footer;
+            position: relative;
+            position: fixed;
+            overflow: hidden;
+            width: 4.5rem;
+            height: 100%;
+            top: 7rem;
+            z-index: 1;
+            transition: ease 1s;
+            &:hover{
+                width: 16rem;
+                z-index: 1;
+            }
+        }
+        .animacion-nav{
+            border-right: $color1-bordes $bordes;
+            @include anim-infinito(animNav);
+            @keyframes animNav{
+                0%{border-right:$color1-bordes $bordes;}
+                25%{border-right:$color1-bordes $bordes;}
+                50%{border-right:$color2-bordes $bordes;}
+                75%{border-right:$color2-bordes $bordes;}
+                100%{border-right:$color1-bordes $bordes;}
+            }
+        }
+        div{
+            .ul-nav{
+                text-decoration: none;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: end;
+                list-style: none;
+                margin-left: 4rem;
+                .li-nav{
+                    font-size: 1.3rem;
+                    margin-top: 3rem;
+                    .li-a-active{
+                        @include li-a-desktop(1);
+                    }
+                    .li-a-nav{
+                        @include li-a-desktop(0.5);
+                        &:hover{
+                            opacity: 0.7;
+                        }
+                    }
+                    .img-menu{
+                        position: fixed;
+                        position: absolute;
+                        left: 1.3rem;
+                        width: 1.7rem;
+                    }
+                }
+            }
+        }
+    }
+}

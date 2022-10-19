@@ -1,0 +1,71 @@
+//header//
+
+@mixin logo-header($width,$top,$left){
+    position: absolute;
+    position: fixed;
+    width: $width;
+    top: $top;
+    left: $left;
+}
+@mixin icon-carrito($width,$top,$left,$opacity){
+    z-index: 1;
+    width: $width;
+    top: $top;
+    left: $left;
+    opacity: $opacity;
+}
+
+//nav//
+
+@mixin li-a-desktop($opacity){
+    color: $color-texto;
+    font-family: $font;
+    font-weight: 300;
+    text-decoration: none;
+    opacity: $opacity;
+}
+@mixin menu-mobile($font-size,$margin-top){
+    font-size: $font-size;
+    font-weight: 300;
+    margin-top: $margin-top;
+    text-align: center;
+    font-family: $font;
+}
+
+//footer//
+
+@mixin div-redes($area-grid,$width,$height){
+    grid: $area-grid;
+    width: $width;
+    height: $height;
+    border-radius: 0.5rem;
+    justify-self: center;
+    transition: 1s ease;
+    align-self:center;
+}
+@mixin div-redes-icon($width,$margin-left,$margin-top){
+    width: $width;
+    margin-left: $margin-left;
+    margin-top: $margin-top;
+    opacity: 0.8;
+}
+@mixin texto-footer($top,$font-size,$text-align){
+    color: $color-texto-footer;
+    text-align: $text-align;
+    font-family: $font;
+    font-weight: 300;
+    position: relative;
+    font-size: $font-size;
+    top: $top;
+}
+
+//index mobile//
+
+@mixin grid-index($width,$height,$margin-top,$margin-left){
+    display: grid;
+    width: $width;
+    height: $height;
+    margin-top: $margin-top;
+    margin-left: $margin-left;
+    border-radius: 0.5rem;
+}

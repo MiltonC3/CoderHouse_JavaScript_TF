@@ -1,0 +1,145 @@
+.section-ayuda{
+    position: relative;
+    height: 44rem;
+    .titulo-ayuda{
+        font-family: $font;
+        text-align: center;
+        color: $color-texto-gris;
+        text-align: center;
+        position: relative;
+        top: 7rem;
+        font-size: 1.4rem;
+        font-weight: 300;
+    }
+    .subtitulo-ayuda{
+        font-family: $font;
+        text-align: center;
+        color: $color-texto-gris;
+        text-align: center;
+        position: relative;
+        top: 8rem;
+        font-size: 0.9rem;
+        font-weight: 200;
+    }
+    .div-pasos-ayuda{
+        position: relative;
+        top: 8rem;
+        display: grid;
+        height: 30rem;
+        grid-template-columns: 40% 60%;      
+        grid-template-rows: 33.3% 33.3% 33.3%;
+        grid-template-areas: 
+                            "img-paso1 div-texto-paso1"
+                            "img-paso2 div-texto-paso2"
+                            "img-paso3 div-texto-paso3";
+
+        .img-paso1{
+            width: 7.5rem;
+            grid-area: img-paso1;
+            opacity: 0.5;
+            justify-self: center;
+            top: 0;
+            align-self: center;
+            position: relative;
+        }
+        .img-paso2{
+            width: 8rem;
+            grid-area: img-paso2;
+            opacity: 0.5;
+            justify-self: center;
+            top: 0;
+            align-self: center;
+            position: relative;
+        }
+        .img-paso3{
+            width: 8.5rem;
+            grid-area: img-paso3;
+            opacity: 0.5;
+            justify-self: center;
+            top: 1rem;
+            align-self: center;
+            position: relative;
+        }
+        .div-texto-paso1{
+            grid-area: div-texto-paso1;
+            justify-self: center;
+            align-self: center;
+            .p-paso1{
+                @include div-texto-pasos(75%);
+            }
+            
+        }
+        .div-texto-paso2{
+            grid-area: div-texto-paso2;
+            justify-self: center;
+            width: 90%;
+            align-self: center;
+            border-top: $bordes $color2-bordes;
+            border-bottom: $bordes $color2-bordes;
+            .p-paso2{
+                margin-bottom: 2rem;
+                @include div-texto-pasos(80%);
+            }
+            
+        }
+        .div-texto-paso3{
+            grid-area: div-texto-paso3;
+            justify-self: center;
+            align-self: center;
+            .p-paso3{
+                @include div-texto-pasos(80%);
+            }
+            
+        }
+    }
+}
+.section-preguntas-frecuentes{
+    position: relative;
+    height: 32rem;
+    .titulo-preguntas-frecuentes{
+        font-family: $font;
+        text-align: center;
+        color: $color-texto-gris;
+        text-align: center;
+        position: relative;
+        top: 3rem;
+        font-size: 1.4rem;
+        font-weight: 300;
+    }
+    .div-preguntas1{
+        @include div-preguntas(7rem,90%,5%,10%);
+        &:hover{
+            @include div-preguntas-hover(90%,5%,26.5%);
+        }
+        .p-preguntas{
+            @include p-preguntas(1rem);
+        }
+        .p-respuestas{
+            @include p-respuestas(0.9rem,1.5rem);
+        }
+    }
+    .div-preguntas2{
+        @include div-preguntas(10rem,90%,5%,10%);
+        &:hover{
+            @include div-preguntas-hover(90%,5%,26.5%);
+        }
+        .p-preguntas{
+            @include p-preguntas(1rem);
+        }
+        .p-respuestas{
+            @include p-respuestas(0.9rem,1.5rem);
+        }
+    }
+    .div-preguntas3{
+        @include div-preguntas(13rem,90%,5%,10%);
+        &:hover{
+            @include div-preguntas-hover(90%,5%,26.5%);
+        }
+        .p-preguntas{
+            @include p-preguntas(1rem);
+        }
+        .p-respuestas{
+            @include p-respuestas(0.9rem,1.5rem);
+        }
+    }
+}
